@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="21f108b9721240d6896acd794e3eaea8" Name="Diagram1">
+        <EntityTypeShape EntityType="LabSMBJCModel.Cliente" Width="1.5" PointX="3" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LabSMBJCModel.Compra" Width="1.5" PointX="7.5" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LabSMBJCModel.CompraDetalle" Width="1.5" PointX="9.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="LabSMBJCModel.Empleado" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="LabSMBJCModel.Producto" Width="1.5" PointX="7.5" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LabSMBJCModel.Proveedor" Width="1.5" PointX="5.25" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="LabSMBJCModel.Usuario" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LabSMBJCModel.Venta" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="LabSMBJCModel.VentaDetalle" Width="1.5" PointX="7.5" PointY="1.125" IsExpanded="true" />
+        <AssociationConnector Association="LabSMBJCModel.fk_Venta_Cliente" ManuallyRouted="false" />
+        <AssociationConnector Association="LabSMBJCModel.fk_Compra_Proveedor" ManuallyRouted="false" />
+        <AssociationConnector Association="LabSMBJCModel.fk_CompraDetalle_Compra" ManuallyRouted="false" />
+        <AssociationConnector Association="LabSMBJCModel.fk_CompraDetalle_Producto" ManuallyRouted="false" />
+        <AssociationConnector Association="LabSMBJCModel.fk_Usuario_Empleado" ManuallyRouted="false" />
+        <AssociationConnector Association="LabSMBJCModel.fk_VentaDetalle_Proveedor" ManuallyRouted="false" />
+        <AssociationConnector Association="LabSMBJCModel.fk_Venta_Usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="LabSMBJCModel.fk_VentaDetalle_Venta" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
