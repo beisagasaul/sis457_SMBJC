@@ -5,6 +5,10 @@ VisualStudioVersion = 17.7.34003.232
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CpSis457", "CpSis457\CpSis457.csproj", "{DF6D94D3-1C27-498A-A35D-D9CCAF2A82BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadSis457", "CadSis457\CadSis457.csproj", "{71F6E3E7-4250-4515-B11D-B8B7C40F23CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClnSis457", "ClnSis457\ClnSis457.csproj", "{F98E9034-BA55-46ED-A939-5225712D5655}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{DF6D94D3-1C27-498A-A35D-D9CCAF2A82BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF6D94D3-1C27-498A-A35D-D9CCAF2A82BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF6D94D3-1C27-498A-A35D-D9CCAF2A82BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71F6E3E7-4250-4515-B11D-B8B7C40F23CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71F6E3E7-4250-4515-B11D-B8B7C40F23CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71F6E3E7-4250-4515-B11D-B8B7C40F23CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71F6E3E7-4250-4515-B11D-B8B7C40F23CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F98E9034-BA55-46ED-A939-5225712D5655}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F98E9034-BA55-46ED-A939-5225712D5655}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F98E9034-BA55-46ED-A939-5225712D5655}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F98E9034-BA55-46ED-A939-5225712D5655}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

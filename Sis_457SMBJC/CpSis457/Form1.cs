@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClnSis457;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,7 @@ namespace CpSis457
         public Form1()
         {
             InitializeComponent();
+            dgvLista.DataSource = ProductoCl.listarPa("");
         }
     }
 }
