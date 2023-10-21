@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace CpSis457
 {
-    public partial class Form1 : Form
+    public partial class FrmProducto : Form
     {
-        public Form1()
+        public FrmProducto()
         {
             InitializeComponent();
             dgvLista.DataSource = ProductoCl.listarPa("");
