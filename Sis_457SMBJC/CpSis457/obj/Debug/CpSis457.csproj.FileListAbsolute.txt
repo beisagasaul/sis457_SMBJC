@@ -10,7 +10,6 @@ C:\Users\hola\Desktop\Sis_457SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\ClnSis457.pdb
 C:\Users\hola\Desktop\Sis_457SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\ClnSis457.dll.config
 C:\Users\hola\Desktop\Sis_457SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\EntityFramework.xml
 C:\Users\hola\Desktop\Sis_457SMBJC\Sis_457SMBJC\CpSis457\obj\Debug\CpSis457.csproj.AssemblyReference.cache
-C:\Users\hola\Desktop\Sis_457SMBJC\Sis_457SMBJC\CpSis457\obj\Debug\CpSis457.Form1.resources
 C:\Users\hola\Desktop\Sis_457SMBJC\Sis_457SMBJC\CpSis457\obj\Debug\CpSis457.Properties.Resources.resources
 C:\Users\hola\Desktop\Sis_457SMBJC\Sis_457SMBJC\CpSis457\obj\Debug\CpSis457.csproj.GenerateResource.cache
 C:\Users\hola\Desktop\Sis_457SMBJC\Sis_457SMBJC\CpSis457\obj\Debug\CpSis457.csproj.CoreCompileInputs.cache
@@ -19,3 +18,4 @@ C:\Users\hola\Desktop\Sis_457SMBJC\Sis_457SMBJC\CpSis457\obj\Debug\CpSis457.exe
 C:\Users\hola\Desktop\Sis_457SMBJC\Sis_457SMBJC\CpSis457\obj\Debug\CpSis457.pdb
 C:\Users\hola\Desktop\Sis_457SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\hola\Desktop\Sis_457SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hola\Desktop\Sis_457SMBJC\Sis_457SMBJC\CpSis457\obj\Debug\CpSis457.FrmProducto.resources
