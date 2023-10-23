@@ -32,8 +32,9 @@ namespace CpSis457
             dgvLista.Columns["saldo"].Visible = false;
             //Poner mayusculas 
             dgvLista.Columns["codigo"].HeaderText = "Código";
-            dgvLista.Columns["descripcion"].HeaderText = "Descripción";
+            dgvLista.Columns["descripcion"].HeaderText = "Nombre del Producto";
             dgvLista.Columns["unidadMedida"].HeaderText = "Cantidad";
+            dgvLista.Columns["saldo"].HeaderText = "Saldo";
             dgvLista.Columns["precioVenta"].HeaderText = "Precio de Venta Bs";
             dgvLista.Columns["usuarioRegistro"].HeaderText = "Usuarios";
             dgvLista.Columns["fechaRegistro"].HeaderText = "Fecha y Hora";
@@ -65,6 +66,14 @@ namespace CpSis457
         {
             esNuevo = true;
             Size = new Size(1021, 588);
+            int index = dgvLista.CurrentCell.RowIndex;
+            int id = Convert.ToInt32(dgvLista.Rows[index].Cells["id"].Value);
+            var producto =ProductoCl.get(id);
+            txtCodigo.Text = producto.codigo;
+            txtDescripcion.Text = producto.descripcion;
+            cbxUnidad.Text = producto.unidadMedida;
+            numSaldo.Value = producto.saldo;
+            numPrecioVenta.Value = producto.precioVenta;
         }
         //Cancelar
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -87,32 +96,87 @@ namespace CpSis457
         {
             if (e.KeyChar == (char)Keys.Enter) listar();
         }
+        //VALIDAR PARA ESCRIBIR
+        private bool  validar()
+        {
+            bool esValido = true;
+            erpCodigo.SetError(txtCodigo, "");
+            erpDescripcion.SetError(txtDescripcion, "");
+            erpUnidad.SetError(cbxUnidad, "");
+            erpSaldo.SetError(numSaldo, "");
+            erpPrecio.SetError(numPrecioVenta, "");
+            //validacion para codigo
+            if (string .IsNullOrEmpty(txtCodigo.Text))
+            {
+                esValido = false;
+                erpCodigo.SetError(txtCodigo, "El campo Código es obligatorio");
+                
+            }
+            //validacion para descripcion
+            if (string.IsNullOrEmpty(txtDescripcion.Text))
+            {
+                esValido = false;
+                erpDescripcion.SetError(txtDescripcion, "El campo Nombre del Producto es obligatorio");
+
+            }
+            //validacion para unidad
+            if (string.IsNullOrEmpty(cbxUnidad.Text))
+            {
+                esValido = false;
+                erpUnidad.SetError(cbxUnidad, "El Cantidad  es obligatorio");
+
+            }
+            //validacion para saldo
+            if (numSaldo.Value <0)
+            {
+                esValido = false;
+                erpUnidad.SetError(numSaldo, "El campo Saldo tiene que ser mayor a cero");
+
+            }
+            //validacion para precio
+            if (numPrecioVenta.Value < 0)
+            {
+                esValido = false;
+                erpUnidad.SetError(numPrecioVenta, "El campo Precio tiene que ser mayor a cero");
+
+            }
+
+            return esValido;
+        }
+
+
+
         //guardar nuevos nuevos registros
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            var producto = new Producto();
-            producto.codigo = txtCodigo.Text.Trim();
-            producto.descripcion = txtDescripcion.Text.Trim();
-            producto.unidadMedida = cbxUnidad.Text;
-            producto.saldo = numSaldo.Value;
-            producto.precioVenta = numPrecioVenta.Value;
-            producto.usuarioRegistro="sis257";
-            if(esNuevo)
+            if (validar())
             {
-                producto.fechaRegistro = DateTime.Now;
-                producto.estado = 1;
-                ProductoCl.insertar(producto);
+
+
+                var producto = new Producto();
+                producto.codigo = txtCodigo.Text.Trim();
+                producto.descripcion = txtDescripcion.Text.Trim();
+                producto.unidadMedida = cbxUnidad.Text;
+                producto.saldo = numSaldo.Value;
+                producto.precioVenta = numPrecioVenta.Value;
+                producto.usuarioRegistro = "sis257";
+                if (esNuevo)
+                {
+                    producto.fechaRegistro = DateTime.Now;
+                    producto.estado = 1;
+                    ProductoCl.insertar(producto);
+                }
+                else
+                {
+                    int index = dgvLista.CurrentCell.RowIndex;
+                    producto.id = Convert.ToInt32(dgvLista.Rows[index].Cells["id"].Value);
+                    ProductoCl.actualizar(producto);
+                }
+                listar();
+                btnCancelar.PerformClick();
+                MessageBox.Show("Producto guardado correctamente", "sis257",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            else
-            {
-                int index = dgvLista.CurrentCell.RowIndex;
-                producto.id = Convert.ToInt32(dgvLista.Rows[index].Cells["id"].Value);
-                ProductoCl.actualizar(producto);
-            }
-            listar();
-            btnCancelar.PerformClick();
-            MessageBox.Show("Producto guardado correctamente","sis257",
-                MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
         //limpiar 
         private void limpiar()
@@ -122,5 +186,22 @@ namespace CpSis457
             cbxUnidad.SelectedIndex=-1;
             numSaldo.Value =0;
     }
+        //eliminar 
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            int index = dgvLista.CurrentCell.RowIndex;
+            int id = Convert.ToInt32(dgvLista.Rows[index].Cells["id"].Value);
+            string codigo = dgvLista.Rows[index].Cells["codigo"].Value.ToString();
+            DialogResult dialog = MessageBox.Show($"¿Esta seguro de que desea eliminar(codigo)?", "sis257", MessageBoxButtons.OK,
+                MessageBoxIcon.Question);
+            if(dialog==DialogResult.OK)
+            {
+                ProductoCl.eliminar(id,"sis457");
+                listar();
+                MessageBox.Show("Producto eliminado correctamente", "sis257",
+                      MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+        }
     }
 }

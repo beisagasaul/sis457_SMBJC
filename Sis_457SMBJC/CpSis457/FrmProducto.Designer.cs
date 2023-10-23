@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.dgvLista = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.txtBuscar = new System.Windows.Forms.TextBox();
@@ -52,12 +53,22 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
+            this.erpCodigo = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpDescripcion = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpUnidad = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpSaldo = new System.Windows.Forms.ErrorProvider(this.components);
+            this.erpPrecio = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.gbxLista.SuspendLayout();
             this.pnlAccion.SuspendLayout();
             this.gbxDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numPrecioVenta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSaldo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpCodigo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpDescripcion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpUnidad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpSaldo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpPrecio)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvLista
@@ -153,6 +164,7 @@
             this.btnEliminar.TabIndex = 9;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnEditar
             // 
@@ -304,6 +316,26 @@
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
+            // erpCodigo
+            // 
+            this.erpCodigo.ContainerControl = this;
+            // 
+            // erpDescripcion
+            // 
+            this.erpDescripcion.ContainerControl = this;
+            // 
+            // erpUnidad
+            // 
+            this.erpUnidad.ContainerControl = this;
+            // 
+            // erpSaldo
+            // 
+            this.erpSaldo.ContainerControl = this;
+            // 
+            // erpPrecio
+            // 
+            this.erpPrecio.ContainerControl = this;
+            // 
             // FrmProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -326,6 +358,11 @@
             this.gbxDatos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numPrecioVenta)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSaldo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpCodigo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpDescripcion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpUnidad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpSaldo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpPrecio)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -357,6 +394,11 @@
         private System.Windows.Forms.NumericUpDown numSaldo;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.NumericUpDown numPrecioVenta;
+        private System.Windows.Forms.ErrorProvider erpCodigo;
+        private System.Windows.Forms.ErrorProvider erpDescripcion;
+        private System.Windows.Forms.ErrorProvider erpUnidad;
+        private System.Windows.Forms.ErrorProvider erpSaldo;
+        private System.Windows.Forms.ErrorProvider erpPrecio;
     }
 }
 
