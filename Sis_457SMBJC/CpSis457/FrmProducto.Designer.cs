@@ -35,15 +35,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.gbxLista = new System.Windows.Forms.GroupBox();
-            this.pnlAccion = new System.Windows.Forms.Panel();
-            this.btnCerrar = new System.Windows.Forms.Button();
-            this.btnEliminar = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
-            this.btnNuevo = new System.Windows.Forms.Button();
             this.gbxDatos = new System.Windows.Forms.GroupBox();
             this.numPrecioVenta = new System.Windows.Forms.NumericUpDown();
             this.label8 = new System.Windows.Forms.Label();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.numSaldo = new System.Windows.Forms.NumericUpDown();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.cbxUnidad = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -51,8 +48,11 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
+            this.pnlAccion = new System.Windows.Forms.Panel();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnNuevo = new System.Windows.Forms.Button();
+            this.btnCerrar = new System.Windows.Forms.Button();
             this.erpCodigo = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpDescripcion = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpUnidad = new System.Windows.Forms.ErrorProvider(this.components);
@@ -61,10 +61,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.gbxLista.SuspendLayout();
-            this.pnlAccion.SuspendLayout();
             this.gbxDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numPrecioVenta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSaldo)).BeginInit();
+            this.pnlAccion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.erpCodigo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpDescripcion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpUnidad)).BeginInit();
@@ -78,7 +78,6 @@
             this.dgvLista.AllowUserToAddRows = false;
             this.dgvLista.AllowUserToDeleteRows = false;
             this.dgvLista.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dgvLista.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
             this.dgvLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLista.GridColor = System.Drawing.Color.AliceBlue;
             this.dgvLista.Location = new System.Drawing.Point(6, 19);
@@ -98,7 +97,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(19, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 26);
+            this.label1.Size = new System.Drawing.Size(123, 27);
             this.label1.TabIndex = 1;
             this.label1.Text = "Productos";
             // 
@@ -143,58 +142,6 @@
             this.gbxLista.TabStop = false;
             this.gbxLista.Text = "Lista de Productos Actuales";
             // 
-            // pnlAccion
-            // 
-            this.pnlAccion.Controls.Add(this.btnEliminar);
-            this.pnlAccion.Controls.Add(this.btnEditar);
-            this.pnlAccion.Controls.Add(this.btnNuevo);
-            this.pnlAccion.Location = new System.Drawing.Point(21, 492);
-            this.pnlAccion.Name = "pnlAccion";
-            this.pnlAccion.Size = new System.Drawing.Size(617, 44);
-            this.pnlAccion.TabIndex = 6;
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Location = new System.Drawing.Point(505, -4);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(79, 39);
-            this.btnCerrar.TabIndex = 10;
-            this.btnCerrar.Text = "Cerrar";
-            this.btnCerrar.UseVisualStyleBackColor = true;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.Enabled = false;
-            this.btnEliminar.Location = new System.Drawing.Point(97, 5);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(79, 39);
-            this.btnEliminar.TabIndex = 9;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
-            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.Enabled = false;
-            this.btnEditar.Location = new System.Drawing.Point(3, 5);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(79, 39);
-            this.btnEditar.TabIndex = 8;
-            this.btnEditar.Text = "Editar";
-            this.btnEditar.UseVisualStyleBackColor = true;
-            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
-            // 
-            // btnNuevo
-            // 
-            this.btnNuevo.Location = new System.Drawing.Point(535, 2);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(79, 39);
-            this.btnNuevo.TabIndex = 7;
-            this.btnNuevo.Text = "Nuevo";
-            this.btnNuevo.UseVisualStyleBackColor = true;
-            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
-            // 
             // gbxDatos
             // 
             this.gbxDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -233,12 +180,36 @@
             this.label8.TabIndex = 21;
             this.label8.Text = "Precio de Venta";
             // 
+            // btnCancelar
+            // 
+            this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+            this.btnCancelar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnCancelar.Location = new System.Drawing.Point(40, 278);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(230, 39);
+            this.btnCancelar.TabIndex = 12;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
             // numSaldo
             // 
             this.numSaldo.Location = new System.Drawing.Point(125, 145);
             this.numSaldo.Name = "numSaldo";
             this.numSaldo.Size = new System.Drawing.Size(137, 20);
             this.numSaldo.TabIndex = 20;
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+            this.btnGuardar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnGuardar.Location = new System.Drawing.Point(40, 223);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(230, 39);
+            this.btnGuardar.TabIndex = 11;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // label7
             // 
@@ -305,29 +276,57 @@
             this.label4.TabIndex = 13;
             this.label4.Text = "Codigo";
             // 
-            // btnCancelar
+            // pnlAccion
             // 
-            this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
-            this.btnCancelar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCancelar.Location = new System.Drawing.Point(40, 278);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(230, 39);
-            this.btnCancelar.TabIndex = 12;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            this.pnlAccion.Controls.Add(this.btnEliminar);
+            this.pnlAccion.Controls.Add(this.btnEditar);
+            this.pnlAccion.Controls.Add(this.btnNuevo);
+            this.pnlAccion.Location = new System.Drawing.Point(21, 492);
+            this.pnlAccion.Name = "pnlAccion";
+            this.pnlAccion.Size = new System.Drawing.Size(617, 44);
+            this.pnlAccion.TabIndex = 6;
             // 
-            // btnGuardar
+            // btnEliminar
             // 
-            this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
-            this.btnGuardar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnGuardar.Location = new System.Drawing.Point(40, 223);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(230, 39);
-            this.btnGuardar.TabIndex = 11;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            this.btnEliminar.Enabled = false;
+            this.btnEliminar.Location = new System.Drawing.Point(97, 5);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(79, 39);
+            this.btnEliminar.TabIndex = 9;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.Enabled = false;
+            this.btnEditar.Location = new System.Drawing.Point(3, 5);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(79, 39);
+            this.btnEditar.TabIndex = 8;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
+            // btnNuevo
+            // 
+            this.btnNuevo.Location = new System.Drawing.Point(535, 2);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(79, 39);
+            this.btnNuevo.TabIndex = 7;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Location = new System.Drawing.Point(505, -4);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(79, 39);
+            this.btnCerrar.TabIndex = 10;
+            this.btnCerrar.Text = "Cerrar";
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // erpCodigo
             // 
@@ -379,11 +378,11 @@
             this.Load += new System.EventHandler(this.FrmProducto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
             this.gbxLista.ResumeLayout(false);
-            this.pnlAccion.ResumeLayout(false);
             this.gbxDatos.ResumeLayout(false);
             this.gbxDatos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numPrecioVenta)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSaldo)).EndInit();
+            this.pnlAccion.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.erpCodigo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpDescripcion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpUnidad)).EndInit();
