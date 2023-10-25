@@ -79,7 +79,6 @@
             this.dgvLista.AllowUserToDeleteRows = false;
             this.dgvLista.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLista.GridColor = System.Drawing.Color.AliceBlue;
             this.dgvLista.Location = new System.Drawing.Point(6, 19);
             this.dgvLista.MultiSelect = false;
             this.dgvLista.Name = "dgvLista";

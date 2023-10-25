@@ -19,3 +19,10 @@ C:\Users\hola\Desktop\Sis_457SMBJC\Sis_457SMBJC\CpSis457\obj\Debug\CpSis457.pdb
 C:\Users\hola\Desktop\Sis_457SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\hola\Desktop\Sis_457SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\hola\Desktop\Sis_457SMBJC\Sis_457SMBJC\CpSis457\obj\Debug\CpSis457.FrmProducto.resources
+C:\Users\hola\Desktop\Sis_457SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\C1.Win.4.5.2.dll
+C:\Users\hola\Desktop\Sis_457SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\C1.Win.C1Ribbon.4.5.2.dll
+C:\Users\hola\Desktop\Sis_457SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\C1.Win.4.5.2.xml
+C:\Users\hola\Desktop\Sis_457SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\C1.Win.C1Ribbon.4.5.2.xml
+C:\Users\hola\Desktop\Sis_457SMBJC\Sis_457SMBJC\CpSis457\obj\Debug\CpSis457.Login.resources
+C:\Users\hola\Desktop\Sis_457SMBJC\Sis_457SMBJC\CpSis457\obj\Debug\CpSis457.Principal.resources
+C:\Users\hola\Desktop\Sis_457SMBJC\Sis_457SMBJC\CpSis457\obj\Debug\CpSis457.exe.licenses

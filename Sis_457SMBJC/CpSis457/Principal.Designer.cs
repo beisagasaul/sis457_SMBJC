@@ -45,13 +45,18 @@
             this.ribbonGroup4 = new C1.Win.C1Ribbon.RibbonGroup();
             this.ribbonTab5 = new C1.Win.C1Ribbon.RibbonTab();
             this.ribbonGroup5 = new C1.Win.C1Ribbon.RibbonGroup();
-            this.ribbonButton1 = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonButton2 = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonButton3 = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonButton4 = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonButton5 = new C1.Win.C1Ribbon.RibbonButton();
+            this.rbVenta = new C1.Win.C1Ribbon.RibbonButton();
+            this.rbDetalleVenta = new C1.Win.C1Ribbon.RibbonButton();
+            this.rbCliente = new C1.Win.C1Ribbon.RibbonButton();
+            this.rbCompra = new C1.Win.C1Ribbon.RibbonButton();
+            this.rbProducto = new C1.Win.C1Ribbon.RibbonButton();
             this.ribbonButton6 = new C1.Win.C1Ribbon.RibbonButton();
             this.ribbonButton7 = new C1.Win.C1Ribbon.RibbonButton();
+            this.rbDetalleCoompra = new C1.Win.C1Ribbon.RibbonButton();
+            this.rbProveedor = new C1.Win.C1Ribbon.RibbonButton();
+            this.rbUsuario = new C1.Win.C1Ribbon.RibbonButton();
+            this.rbEmpleado = new C1.Win.C1Ribbon.RibbonButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,50 +102,54 @@
             // 
             this.ribbonTab1.Groups.Add(this.ribbonGroup1);
             this.ribbonTab1.Name = "ribbonTab1";
-            this.ribbonTab1.Text = "Catalogos";
+            this.ribbonTab1.Text = "Ventas";
             // 
             // ribbonGroup1
             // 
-            this.ribbonGroup1.Items.Add(this.ribbonButton1);
-            this.ribbonGroup1.Items.Add(this.ribbonButton2);
-            this.ribbonGroup1.Items.Add(this.ribbonButton3);
+            this.ribbonGroup1.Items.Add(this.rbVenta);
+            this.ribbonGroup1.Items.Add(this.rbDetalleVenta);
+            this.ribbonGroup1.Items.Add(this.rbCliente);
             this.ribbonGroup1.Name = "ribbonGroup1";
-            this.ribbonGroup1.Text = "Gestion de Catalogos";
+            this.ribbonGroup1.Text = "Gestion de Ventas";
             // 
             // ribbonTab2
             // 
             this.ribbonTab2.Groups.Add(this.ribbonGroup2);
             this.ribbonTab2.Name = "ribbonTab2";
-            this.ribbonTab2.Text = "Caja";
+            this.ribbonTab2.Text = "Conmpras";
             // 
             // ribbonGroup2
             // 
-            this.ribbonGroup2.Items.Add(this.ribbonButton4);
+            this.ribbonGroup2.Items.Add(this.rbCompra);
+            this.ribbonGroup2.Items.Add(this.rbDetalleCoompra);
+            this.ribbonGroup2.Items.Add(this.rbProveedor);
             this.ribbonGroup2.Name = "ribbonGroup2";
-            this.ribbonGroup2.Text = "Arqueo";
+            this.ribbonGroup2.Text = "Gestion de Compras";
             // 
             // ribbonTab3
             // 
             this.ribbonTab3.Groups.Add(this.ribbonGroup3);
             this.ribbonTab3.Name = "ribbonTab3";
-            this.ribbonTab3.Text = "Administracion";
+            this.ribbonTab3.Text = "Inventario";
             // 
             // ribbonGroup3
             // 
-            this.ribbonGroup3.Items.Add(this.ribbonButton5);
+            this.ribbonGroup3.Items.Add(this.rbProducto);
             this.ribbonGroup3.Name = "ribbonGroup3";
-            this.ribbonGroup3.Text = "Empleados ";
+            this.ribbonGroup3.Text = "Gestion de Inventario";
             // 
             // ribbonTab4
             // 
             this.ribbonTab4.Groups.Add(this.ribbonGroup4);
             this.ribbonTab4.Name = "ribbonTab4";
-            this.ribbonTab4.Text = "Reportes";
+            this.ribbonTab4.Text = "Usuarios";
             // 
             // ribbonGroup4
             // 
+            this.ribbonGroup4.Items.Add(this.rbUsuario);
+            this.ribbonGroup4.Items.Add(this.rbEmpleado);
             this.ribbonGroup4.Name = "ribbonGroup4";
-            this.ribbonGroup4.Text = "Group";
+            this.ribbonGroup4.Text = "Gestion de Usuarios ";
             // 
             // ribbonTab5
             // 
@@ -155,40 +164,41 @@
             this.ribbonGroup5.Name = "ribbonGroup5";
             this.ribbonGroup5.Text = "Ayuda";
             // 
-            // ribbonButton1
+            // rbVenta
             // 
-            this.ribbonButton1.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton1.LargeImage")));
-            this.ribbonButton1.Name = "ribbonButton1";
-            this.ribbonButton1.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton1.SmallImage")));
-            this.ribbonButton1.Text = "Productos";
+            this.rbVenta.LargeImage = ((System.Drawing.Image)(resources.GetObject("rbVenta.LargeImage")));
+            this.rbVenta.Name = "rbVenta";
+            this.rbVenta.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbVenta.SmallImage")));
+            this.rbVenta.Text = "Venta";
             // 
-            // ribbonButton2
+            // rbDetalleVenta
             // 
-            this.ribbonButton2.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton2.LargeImage")));
-            this.ribbonButton2.Name = "ribbonButton2";
-            this.ribbonButton2.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton2.SmallImage")));
-            this.ribbonButton2.Text = "Proveedores";
+            this.rbDetalleVenta.LargeImage = ((System.Drawing.Image)(resources.GetObject("rbDetalleVenta.LargeImage")));
+            this.rbDetalleVenta.Name = "rbDetalleVenta";
+            this.rbDetalleVenta.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbDetalleVenta.SmallImage")));
+            this.rbDetalleVenta.Text = "Detalle de Venta";
             // 
-            // ribbonButton3
+            // rbCliente
             // 
-            this.ribbonButton3.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton3.LargeImage")));
-            this.ribbonButton3.Name = "ribbonButton3";
-            this.ribbonButton3.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton3.SmallImage")));
-            this.ribbonButton3.Text = "Clientes";
+            this.rbCliente.LargeImage = ((System.Drawing.Image)(resources.GetObject("rbCliente.LargeImage")));
+            this.rbCliente.Name = "rbCliente";
+            this.rbCliente.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbCliente.SmallImage")));
+            this.rbCliente.Text = "Clientes";
             // 
-            // ribbonButton4
+            // rbCompra
             // 
-            this.ribbonButton4.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton4.LargeImage")));
-            this.ribbonButton4.Name = "ribbonButton4";
-            this.ribbonButton4.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton4.SmallImage")));
-            this.ribbonButton4.Text = "Arqueo de caja";
+            this.rbCompra.LargeImage = ((System.Drawing.Image)(resources.GetObject("rbCompra.LargeImage")));
+            this.rbCompra.Name = "rbCompra";
+            this.rbCompra.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbCompra.SmallImage")));
+            this.rbCompra.Text = "Compra";
             // 
-            // ribbonButton5
+            // rbProducto
             // 
-            this.ribbonButton5.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton5.LargeImage")));
-            this.ribbonButton5.Name = "ribbonButton5";
-            this.ribbonButton5.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton5.SmallImage")));
-            this.ribbonButton5.Text = "Usuarios";
+            this.rbProducto.LargeImage = ((System.Drawing.Image)(resources.GetObject("rbProducto.LargeImage")));
+            this.rbProducto.Name = "rbProducto";
+            this.rbProducto.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbProducto.SmallImage")));
+            this.rbProducto.Text = "Producto";
+            this.rbProducto.Click += new System.EventHandler(this.rbProducto_Click);
             // 
             // ribbonButton6
             // 
@@ -204,14 +214,53 @@
             this.ribbonButton7.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton7.SmallImage")));
             this.ribbonButton7.Text = "Acerca de ";
             // 
+            // rbDetalleCoompra
+            // 
+            this.rbDetalleCoompra.LargeImage = ((System.Drawing.Image)(resources.GetObject("rbDetalleCoompra.LargeImage")));
+            this.rbDetalleCoompra.Name = "rbDetalleCoompra";
+            this.rbDetalleCoompra.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbDetalleCoompra.SmallImage")));
+            this.rbDetalleCoompra.Text = "Detalle de Compra";
+            // 
+            // rbProveedor
+            // 
+            this.rbProveedor.LargeImage = ((System.Drawing.Image)(resources.GetObject("rbProveedor.LargeImage")));
+            this.rbProveedor.Name = "rbProveedor";
+            this.rbProveedor.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbProveedor.SmallImage")));
+            this.rbProveedor.Text = "Proveedor";
+            this.rbProveedor.Click += new System.EventHandler(this.ribbonButton9_Click);
+            // 
+            // rbUsuario
+            // 
+            this.rbUsuario.LargeImage = ((System.Drawing.Image)(resources.GetObject("rbUsuario.LargeImage")));
+            this.rbUsuario.Name = "rbUsuario";
+            this.rbUsuario.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbUsuario.SmallImage")));
+            this.rbUsuario.Text = "Usuarios";
+            // 
+            // rbEmpleado
+            // 
+            this.rbEmpleado.LargeImage = ((System.Drawing.Image)(resources.GetObject("rbEmpleado.LargeImage")));
+            this.rbEmpleado.Name = "rbEmpleado";
+            this.rbEmpleado.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbEmpleado.SmallImage")));
+            this.rbEmpleado.Text = "Empleados";
+            // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 161);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(800, 289);
+            this.panel1.TabIndex = 1;
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.c1Ribbon1);
             this.Name = "Principal";
             this.Text = "Principal";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -232,16 +281,21 @@
         private C1.Win.C1Ribbon.RibbonGroup ribbonGroup2;
         private C1.Win.C1Ribbon.RibbonTab ribbonTab3;
         private C1.Win.C1Ribbon.RibbonGroup ribbonGroup3;
-        private C1.Win.C1Ribbon.RibbonButton ribbonButton1;
+        private C1.Win.C1Ribbon.RibbonButton rbVenta;
         private C1.Win.C1Ribbon.RibbonTab ribbonTab4;
         private C1.Win.C1Ribbon.RibbonGroup ribbonGroup4;
         private C1.Win.C1Ribbon.RibbonTab ribbonTab5;
         private C1.Win.C1Ribbon.RibbonGroup ribbonGroup5;
-        private C1.Win.C1Ribbon.RibbonButton ribbonButton2;
-        private C1.Win.C1Ribbon.RibbonButton ribbonButton3;
-        private C1.Win.C1Ribbon.RibbonButton ribbonButton4;
-        private C1.Win.C1Ribbon.RibbonButton ribbonButton5;
+        private C1.Win.C1Ribbon.RibbonButton rbDetalleVenta;
+        private C1.Win.C1Ribbon.RibbonButton rbCliente;
+        private C1.Win.C1Ribbon.RibbonButton rbCompra;
+        private C1.Win.C1Ribbon.RibbonButton rbProducto;
         private C1.Win.C1Ribbon.RibbonButton ribbonButton6;
         private C1.Win.C1Ribbon.RibbonButton ribbonButton7;
+        private C1.Win.C1Ribbon.RibbonButton rbDetalleCoompra;
+        private C1.Win.C1Ribbon.RibbonButton rbProveedor;
+        private C1.Win.C1Ribbon.RibbonButton rbUsuario;
+        private C1.Win.C1Ribbon.RibbonButton rbEmpleado;
+        private System.Windows.Forms.Panel panel1;
     }
 }

@@ -16,5 +16,16 @@ namespace CpSis457
         {
             InitializeComponent();
         }
+
+        private void ribbonButton9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbProducto_Click(object sender, EventArgs e)
+        {
+            new FrmProducto().ShowDialog();       
+                
+        }
     }
 }
