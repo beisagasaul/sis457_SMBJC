@@ -115,9 +115,9 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label2.Location = new System.Drawing.Point(12, 43);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 13);
+            this.label2.Size = new System.Drawing.Size(164, 13);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Buscar por descripcion";
+            this.label2.Text = "Buscar por Nombre del Producto ";
             // 
             // btnBuscar
             // 
@@ -361,7 +361,7 @@
             // 
             // btnSalirB
             // 
-            this.btnSalirB.Location = new System.Drawing.Point(558, 49);
+            this.btnSalirB.Location = new System.Drawing.Point(559, 49);
             this.btnSalirB.Name = "btnSalirB";
             this.btnSalirB.Size = new System.Drawing.Size(79, 39);
             this.btnSalirB.TabIndex = 12;

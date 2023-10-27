@@ -45,6 +45,7 @@ namespace CpSis457
             if(productos.Count>0) dgvLista.Rows[0].Cells["codigo"].Selected = true;
 
         }
+        
         //ocultar el formulario de nuevo
         private void FrmProducto_Load(object sender, EventArgs e)
         {
