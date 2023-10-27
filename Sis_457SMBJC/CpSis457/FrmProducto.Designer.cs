@@ -184,7 +184,7 @@
             // 
             this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
             this.btnCancelar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCancelar.Location = new System.Drawing.Point(49, 371);
+            this.btnCancelar.Location = new System.Drawing.Point(26, 337);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(230, 39);
             this.btnCancelar.TabIndex = 12;
@@ -203,11 +203,11 @@
             // 
             this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
             this.btnGuardar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnGuardar.Location = new System.Drawing.Point(49, 303);
+            this.btnGuardar.Location = new System.Drawing.Point(26, 284);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(230, 39);
             this.btnGuardar.TabIndex = 11;
-            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.Text = "Save";
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
@@ -293,7 +293,7 @@
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(79, 39);
             this.btnEliminar.TabIndex = 9;
-            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.Text = "Delete";
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
@@ -304,7 +304,7 @@
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(79, 39);
             this.btnEditar.TabIndex = 8;
-            this.btnEditar.Text = "Editar";
+            this.btnEditar.Text = "Edit";
             this.btnEditar.UseVisualStyleBackColor = true;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
@@ -314,7 +314,7 @@
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(79, 39);
             this.btnNuevo.TabIndex = 7;
-            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.Text = "New";
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
@@ -324,7 +324,7 @@
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(79, 39);
             this.btnCerrar.TabIndex = 10;
-            this.btnCerrar.Text = "Cerrar";
+            this.btnCerrar.Text = "Close";
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
