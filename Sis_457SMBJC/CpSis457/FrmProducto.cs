@@ -49,8 +49,9 @@ namespace CpSis457
         //ocultar el formulario de nuevo
         private void FrmProducto_Load(object sender, EventArgs e)
         {
-            dgvLista.DefaultCellStyle.ForeColor = Color.Black;
-            Size=new Size(687, 548);
+  
+          // borrar dgvLista.DefaultCellStyle.ForeColor = Color.Black;
+          Size =new Size(887, 548);
             listar();
         }
         //muestra el formulario para crear nuevos
@@ -60,13 +61,14 @@ namespace CpSis457
             //parpadea en nuevo
             esNuevo= true;
             txtCodigo.Focus();
-            Size = new Size(1005, 548);
+            Size = new Size(1235, 548);
         }
         //editar 
         private void btnEditar_Click(object sender, EventArgs e)
         {
+          
             esNuevo = true;
-            Size = new Size(1005, 548);
+            Size = new Size(1235, 548);
             int index = dgvLista.CurrentCell.RowIndex;
             int id = Convert.ToInt32(dgvLista.Rows[index].Cells["id"].Value);
             var producto =ProductoCl.get(id);
@@ -79,7 +81,7 @@ namespace CpSis457
         //Cancelar
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            Size = new Size(687, 548);
+            Size = new Size(887, 548);
             limpiar();
         }
         //cerrar salir de todo
