@@ -29,12 +29,12 @@ namespace CpSis457
             //Oculta la columna id
             dgvLista.Columns["id"].Visible = false;
             dgvLista.Columns["estado"].Visible = false;
-            dgvLista.Columns["saldo"].Visible = false;
+           
             //Poner mayusculas 
             dgvLista.Columns["codigo"].HeaderText = "Código";
             dgvLista.Columns["descripcion"].HeaderText = "Nombre del Producto";
             dgvLista.Columns["unidadMedida"].HeaderText = "Cantidad";
-            dgvLista.Columns["saldo"].HeaderText = "Saldo";
+            dgvLista.Columns["saldo"].HeaderText = "Precio de Compra";
             dgvLista.Columns["precioVenta"].HeaderText = "Precio de Venta Bs";
             dgvLista.Columns["usuarioRegistro"].HeaderText = "Usuarios";
             dgvLista.Columns["fechaRegistro"].HeaderText = "Fecha y Hora";
@@ -44,11 +44,11 @@ namespace CpSis457
             //Si  hay registro que el primer elemento este selccionado
             if(productos.Count>0) dgvLista.Rows[0].Cells["codigo"].Selected = true;
 
-
         }
         //ocultar el formulario de nuevo
         private void FrmProducto_Load(object sender, EventArgs e)
         {
+            dgvLista.DefaultCellStyle.ForeColor = Color.Black;
             Size=new Size(687, 548);
             listar();
         }
@@ -127,14 +127,14 @@ namespace CpSis457
 
             }
             //validacion para saldo
-            if (numSaldo.Value <0)
+            if (numSaldo.Value < 1)
             {
                 esValido = false;
                 erpUnidad.SetError(numSaldo, "El campo Saldo tiene que ser mayor a cero");
 
             }
             //validacion para precio
-            if (numPrecioVenta.Value < 0)
+            if (numPrecioVenta.Value < 1)
             {
                 esValido = false;
                 erpUnidad.SetError(numPrecioVenta, "El campo Precio tiene que ser mayor a cero");
@@ -192,9 +192,10 @@ namespace CpSis457
             int index = dgvLista.CurrentCell.RowIndex;
             int id = Convert.ToInt32(dgvLista.Rows[index].Cells["id"].Value);
             string codigo = dgvLista.Rows[index].Cells["codigo"].Value.ToString();
-            DialogResult dialog = MessageBox.Show($"¿Esta seguro de que desea eliminar(codigo)?", "sis257", MessageBoxButtons.OK,
+            DialogResult dialog = MessageBox.Show($"¿Esta seguro de que desea eliminar{codigo}?", "sis257", MessageBoxButtons.OK,
                 MessageBoxIcon.Question);
-            if(dialog==DialogResult.OK)
+           
+            if (dialog==DialogResult.OK)
             {
                 ProductoCl.eliminar(id,"sis457");
                 listar();
@@ -202,6 +203,11 @@ namespace CpSis457
                       MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
+        }
+        //volver a la lista actual despues de buscar
+        private void btnSalirB_Click(object sender, EventArgs e)
+        {
+           Close();
         }
     }
 }

@@ -145,5 +145,17 @@
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paClienteListar" FunctionName="LabSMBJCModel.Store.paClienteListar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LabSMBJCModel.paClienteListar_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nit" ColumnName="nit" />
+          <ScalarProperty Name="razonSocial" ColumnName="razonSocial" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
   </EntityContainerMapping>
 </Mapping>

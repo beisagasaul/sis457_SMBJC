@@ -59,6 +59,7 @@
             this.erpSaldo = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpPrecio = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnSalirB = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.gbxLista.SuspendLayout();
             this.gbxDatos.SuspendLayout();
@@ -156,24 +157,24 @@
             this.gbxDatos.Controls.Add(this.label5);
             this.gbxDatos.Controls.Add(this.txtCodigo);
             this.gbxDatos.Controls.Add(this.label4);
-            this.gbxDatos.Location = new System.Drawing.Point(672, 0);
+            this.gbxDatos.Location = new System.Drawing.Point(672, 19);
             this.gbxDatos.Name = "gbxDatos";
-            this.gbxDatos.Size = new System.Drawing.Size(315, 466);
+            this.gbxDatos.Size = new System.Drawing.Size(306, 447);
             this.gbxDatos.TabIndex = 7;
             this.gbxDatos.TabStop = false;
             this.gbxDatos.Text = "Mantenimiento de Productos";
             // 
             // numPrecioVenta
             // 
-            this.numPrecioVenta.Location = new System.Drawing.Point(125, 181);
+            this.numPrecioVenta.Location = new System.Drawing.Point(40, 247);
             this.numPrecioVenta.Name = "numPrecioVenta";
-            this.numPrecioVenta.Size = new System.Drawing.Size(137, 20);
+            this.numPrecioVenta.Size = new System.Drawing.Size(194, 20);
             this.numPrecioVenta.TabIndex = 22;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(18, 181);
+            this.label8.Location = new System.Drawing.Point(37, 231);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(98, 13);
             this.label8.TabIndex = 21;
@@ -183,7 +184,7 @@
             // 
             this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
             this.btnCancelar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCancelar.Location = new System.Drawing.Point(40, 278);
+            this.btnCancelar.Location = new System.Drawing.Point(49, 371);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(230, 39);
             this.btnCancelar.TabIndex = 12;
@@ -193,16 +194,16 @@
             // 
             // numSaldo
             // 
-            this.numSaldo.Location = new System.Drawing.Point(125, 145);
+            this.numSaldo.Location = new System.Drawing.Point(40, 198);
             this.numSaldo.Name = "numSaldo";
-            this.numSaldo.Size = new System.Drawing.Size(137, 20);
+            this.numSaldo.Size = new System.Drawing.Size(194, 20);
             this.numSaldo.TabIndex = 20;
             // 
             // btnGuardar
             // 
             this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
             this.btnGuardar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnGuardar.Location = new System.Drawing.Point(40, 223);
+            this.btnGuardar.Location = new System.Drawing.Point(49, 303);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(230, 39);
             this.btnGuardar.TabIndex = 11;
@@ -213,11 +214,11 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(18, 147);
+            this.label7.Location = new System.Drawing.Point(37, 182);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(39, 13);
+            this.label7.Size = new System.Drawing.Size(107, 13);
             this.label7.TabIndex = 19;
-            this.label7.Text = "Saldo";
+            this.label7.Text = "Precio de Compra";
             // 
             // cbxUnidad
             // 
@@ -227,7 +228,7 @@
             "Paquetes",
             "Barril",
             "Botellas"});
-            this.cbxUnidad.Location = new System.Drawing.Point(101, 108);
+            this.cbxUnidad.Location = new System.Drawing.Point(40, 149);
             this.cbxUnidad.Name = "cbxUnidad";
             this.cbxUnidad.Size = new System.Drawing.Size(169, 21);
             this.cbxUnidad.TabIndex = 18;
@@ -235,15 +236,15 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(18, 111);
+            this.label6.Location = new System.Drawing.Point(37, 133);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(47, 13);
+            this.label6.Size = new System.Drawing.Size(57, 13);
             this.label6.TabIndex = 17;
-            this.label6.Text = "Unidad";
+            this.label6.Text = "Cantidad";
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(101, 72);
+            this.txtDescripcion.Location = new System.Drawing.Point(40, 101);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(169, 20);
             this.txtDescripcion.TabIndex = 16;
@@ -251,16 +252,16 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(18, 72);
+            this.label5.Location = new System.Drawing.Point(37, 85);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(74, 13);
+            this.label5.Size = new System.Drawing.Size(126, 13);
             this.label5.TabIndex = 15;
-            this.label5.Text = "Descripcion";
+            this.label5.Text = "Nombre del Producto";
             // 
             // txtCodigo
             // 
             this.txtCodigo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtCodigo.Location = new System.Drawing.Point(101, 32);
+            this.txtCodigo.Location = new System.Drawing.Point(40, 62);
             this.txtCodigo.MaxLength = 10;
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(169, 20);
@@ -269,7 +270,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(18, 32);
+            this.label4.Location = new System.Drawing.Point(37, 46);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(46, 13);
             this.label4.TabIndex = 13;
@@ -358,12 +359,23 @@
             this.panel1.Size = new System.Drawing.Size(1005, 43);
             this.panel1.TabIndex = 11;
             // 
+            // btnSalirB
+            // 
+            this.btnSalirB.Location = new System.Drawing.Point(558, 49);
+            this.btnSalirB.Name = "btnSalirB";
+            this.btnSalirB.Size = new System.Drawing.Size(79, 39);
+            this.btnSalirB.TabIndex = 12;
+            this.btnSalirB.Text = "Lista";
+            this.btnSalirB.UseVisualStyleBackColor = true;
+            this.btnSalirB.Click += new System.EventHandler(this.btnSalirB_Click);
+            // 
             // FrmProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
             this.ClientSize = new System.Drawing.Size(1005, 548);
+            this.Controls.Add(this.btnSalirB);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlAccion);
             this.Controls.Add(this.gbxLista);
@@ -426,6 +438,7 @@
         private System.Windows.Forms.ErrorProvider erpSaldo;
         private System.Windows.Forms.ErrorProvider erpPrecio;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnSalirB;
     }
 }
 
