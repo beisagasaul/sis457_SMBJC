@@ -199,14 +199,14 @@
             // 
             // rbUsuario
             // 
-            this.rbUsuario.LargeImage = ((System.Drawing.Image)(resources.GetObject("rbUsuario.LargeImage")));
+            this.rbUsuario.LargeImage = global::CpSis457.Properties.Resources.grupos;
             this.rbUsuario.Name = "rbUsuario";
             this.rbUsuario.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbUsuario.SmallImage")));
             this.rbUsuario.Text = "Usuarios";
             // 
             // rbEmpleado
             // 
-            this.rbEmpleado.LargeImage = ((System.Drawing.Image)(resources.GetObject("rbEmpleado.LargeImage")));
+            this.rbEmpleado.LargeImage = global::CpSis457.Properties.Resources.empleado;
             this.rbEmpleado.Name = "rbEmpleado";
             this.rbEmpleado.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbEmpleado.SmallImage")));
             this.rbEmpleado.Text = "Empleados";
@@ -226,14 +226,14 @@
             // 
             // ribbonButton6
             // 
-            this.ribbonButton6.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton6.LargeImage")));
+            this.ribbonButton6.LargeImage = global::CpSis457.Properties.Resources.manual;
             this.ribbonButton6.Name = "ribbonButton6";
             this.ribbonButton6.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton6.SmallImage")));
             this.ribbonButton6.Text = "Manual de usuario ";
             // 
             // ribbonButton7
             // 
-            this.ribbonButton7.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton7.LargeImage")));
+            this.ribbonButton7.LargeImage = global::CpSis457.Properties.Resources.acerca_de;
             this.ribbonButton7.Name = "ribbonButton7";
             this.ribbonButton7.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton7.SmallImage")));
             this.ribbonButton7.Text = "Acerca de ";
