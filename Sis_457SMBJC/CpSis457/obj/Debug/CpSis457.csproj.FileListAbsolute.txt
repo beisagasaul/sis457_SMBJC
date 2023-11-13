@@ -54,3 +54,39 @@ C:\Users\hola\Desktop\Sis_457SMBJC - copia\Sis_457SMBJC\CpSis457\obj\Debug\CpSis
 C:\Users\hola\Desktop\Sis_457SMBJC - copia\Sis_457SMBJC\CpSis457\obj\Debug\CpSis457.csproj.CopyComplete
 C:\Users\hola\Desktop\Sis_457SMBJC - copia\Sis_457SMBJC\CpSis457\obj\Debug\CpSis457.exe
 C:\Users\hola\Desktop\Sis_457SMBJC - copia\Sis_457SMBJC\CpSis457\obj\Debug\CpSis457.pdb
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\obj\Debug\CpSis457.csproj.AssemblyReference.cache
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\obj\Debug\CpSis457.FrmProducto.resources
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\obj\Debug\CpSis457.Login.resources
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\obj\Debug\CpSis457.Principal.resources
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\obj\Debug\CpSis457.Properties.Resources.resources
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\obj\Debug\CpSis457.csproj.GenerateResource.cache
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\obj\Debug\CpSis457.exe.licenses
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\obj\Debug\CpSis457.exe
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\obj\Debug\CpSis457.pdb
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\obj\Debug\CpSis457.csproj.CoreCompileInputs.cache
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\CpSis457.exe.config
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\CpSis457.exe
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\CpSis457.pdb
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\C1.Win.4.5.2.dll
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\C1.Win.4.dll
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\C1.Win.C1FlexGrid.4.dll
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\C1.Win.C1FlexGrid.GroupPanel.4.dll
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\C1.Win.C1Ribbon.4.5.2.dll
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\C1.Win.C1TouchToolKit.4.dll
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\CadSis457.dll
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\ClnSis457.dll
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\EntityFramework.dll
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\CadSis457.pdb
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\CadSis457.dll.config
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\ClnSis457.pdb
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\ClnSis457.dll.config
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\C1.Win.4.xml
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\C1.Win.4.5.2.xml
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\C1.Win.C1FlexGrid.4.xml
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\C1.Win.C1FlexGrid.GroupPanel.4.xml
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\C1.Win.C1Ribbon.4.5.2.xml
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\C1.Win.C1TouchToolKit.4.xml
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\EntityFramework.xml
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\obj\Debug\CpSis457.csproj.CopyComplete

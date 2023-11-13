@@ -36,7 +36,7 @@ namespace CpSis457
             dgvLista.Columns["unidadMedida"].HeaderText = "Cantidad";
             dgvLista.Columns["saldo"].HeaderText = "Precio de Compra";
             dgvLista.Columns["precioVenta"].HeaderText = "Precio de Venta Bs";
-            dgvLista.Columns["usuarioRegistro"].HeaderText = "Usuarios";
+            dgvLista.Columns["usuarioRegistro"].HeaderText = "Usuario";
             dgvLista.Columns["fechaRegistro"].HeaderText = "Fecha y Hora";
             //habilitar edicion y eliminar y desabilitar
             btnEditar.Enabled = productos.Count > 0;
@@ -67,7 +67,7 @@ namespace CpSis457
         private void btnEditar_Click(object sender, EventArgs e)
         {
           
-            esNuevo = true;
+            esNuevo = false;
             Size = new Size(1235, 548);
             int index = dgvLista.CurrentCell.RowIndex;
             int id = Convert.ToInt32(dgvLista.Rows[index].Cells["id"].Value);
@@ -195,7 +195,7 @@ namespace CpSis457
             int index = dgvLista.CurrentCell.RowIndex;
             int id = Convert.ToInt32(dgvLista.Rows[index].Cells["id"].Value);
             string codigo = dgvLista.Rows[index].Cells["codigo"].Value.ToString();
-            DialogResult dialog = MessageBox.Show($"¿Esta seguro de que desea eliminar{codigo}?", "sis257", MessageBoxButtons.OK,
+            DialogResult dialog = MessageBox.Show($"¿Esta seguro de que desea eliminar{codigo}?", "sis257", MessageBoxButtons.OKCancel,
                 MessageBoxIcon.Question);
            
             if (dialog==DialogResult.OK)
