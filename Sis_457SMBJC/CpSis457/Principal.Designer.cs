@@ -62,13 +62,13 @@
             // c1Ribbon1
             // 
             this.c1Ribbon1.ApplicationMenuHolder = this.ribbonApplicationMenu1;
-          
+        
             this.c1Ribbon1.BottomToolBarHolder = this.ribbonBottomToolBar1;
             this.c1Ribbon1.ConfigToolBarHolder = this.ribbonConfigToolBar1;
             this.c1Ribbon1.Location = new System.Drawing.Point(0, 0);
             this.c1Ribbon1.Name = "c1Ribbon1";
             this.c1Ribbon1.QatHolder = this.ribbonQat1;
-            this.c1Ribbon1.Size = new System.Drawing.Size(771, 161);
+            this.c1Ribbon1.Size = new System.Drawing.Size(693, 161);
             this.c1Ribbon1.Tabs.Add(this.ribbonTab1);
             this.c1Ribbon1.Tabs.Add(this.ribbonTab2);
             this.c1Ribbon1.Tabs.Add(this.ribbonTab3);
@@ -248,7 +248,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.BackgroundImage = global::CpSis457.Properties.Resources.FONdo;
-            this.ClientSize = new System.Drawing.Size(771, 478);
+            this.ClientSize = new System.Drawing.Size(693, 483);
             this.Controls.Add(this.c1Ribbon1);
             this.Name = "Principal";
             this.Text = "Principal";
