@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ClnSis457
-{
+{ 
     public class ProductoCl
     {
         public static int insertar(Producto producto)

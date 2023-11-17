@@ -176,6 +176,15 @@
   <ItemGroup>
     <None Include="Resources\licor.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-microsoft-excel-2019-480.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reporte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscaroriginal.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

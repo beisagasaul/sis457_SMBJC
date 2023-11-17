@@ -36,10 +36,10 @@
             this.btnIngresar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.ojoClave = new System.Windows.Forms.CheckBox();
+            this.linkRegistrarse = new System.Windows.Forms.LinkLabel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnMinimizar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.linkRegistrarse = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -146,6 +146,19 @@
             this.ojoClave.UseVisualStyleBackColor = true;
             this.ojoClave.CheckedChanged += new System.EventHandler(this.ojoClave_CheckedChanged);
             // 
+            // linkRegistrarse
+            // 
+            this.linkRegistrarse.ActiveLinkColor = System.Drawing.Color.White;
+            this.linkRegistrarse.AutoSize = true;
+            this.linkRegistrarse.Font = new System.Drawing.Font("Century Gothic", 9.980198F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkRegistrarse.LinkColor = System.Drawing.Color.White;
+            this.linkRegistrarse.Location = new System.Drawing.Point(132, 597);
+            this.linkRegistrarse.Name = "linkRegistrarse";
+            this.linkRegistrarse.Size = new System.Drawing.Size(80, 17);
+            this.linkRegistrarse.TabIndex = 10;
+            this.linkRegistrarse.TabStop = true;
+            this.linkRegistrarse.Text = "Registrarse";
+            // 
             // panel2
             // 
             this.panel2.BackgroundImage = global::CpSis457.Properties.Resources.licor;
@@ -185,19 +198,6 @@
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // linkRegistrarse
-            // 
-            this.linkRegistrarse.ActiveLinkColor = System.Drawing.Color.White;
-            this.linkRegistrarse.AutoSize = true;
-            this.linkRegistrarse.Font = new System.Drawing.Font("Century Gothic", 9.980198F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkRegistrarse.LinkColor = System.Drawing.Color.White;
-            this.linkRegistrarse.Location = new System.Drawing.Point(132, 597);
-            this.linkRegistrarse.Name = "linkRegistrarse";
-            this.linkRegistrarse.Size = new System.Drawing.Size(80, 17);
-            this.linkRegistrarse.TabIndex = 10;
-            this.linkRegistrarse.TabStop = true;
-            this.linkRegistrarse.Text = "Registrarse";
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -216,6 +216,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

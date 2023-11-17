@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace CpSis457
 {
-    public partial class FrmProducto : Form
+    public partial class FrmProducto: Form
     {
         bool esNuevo = false;
         public FrmProducto()
@@ -53,6 +53,7 @@ namespace CpSis457
           // borrar dgvLista.DefaultCellStyle.ForeColor = Color.Black;
           Size =new Size(887, 548);
             listar();
+           
         }
         //muestra el formulario para crear nuevos
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -152,6 +153,9 @@ namespace CpSis457
         //guardar nuevos nuevos registros
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            
+           
+
             if (validar())
             {
 
@@ -180,6 +184,8 @@ namespace CpSis457
                 MessageBox.Show("Producto guardado correctamente", "sis257",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+            //llamas a la clase para que saque el total en guardar 
+            CalcularSuma();
         }
         //limpiar 
         private void limpiar()
@@ -189,6 +195,7 @@ namespace CpSis457
             cbxUnidad.SelectedIndex=-1;
             numSaldo.Value =0;
     }
+        //Crear  2 clases para suma;
         //eliminar 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
@@ -206,11 +213,33 @@ namespace CpSis457
                       MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
+            //llamas a la clase para que saque el total en  
+            CalcularSuma();
         }
+
         //volver a la lista actual despues de buscar
         private void btnSalirB_Click(object sender, EventArgs e)
         {
            Close();
         }
+        //Llamar la clase calcular suma
+        private void btnSuma_Click(object sender, EventArgs e)
+        {
+            CalcularSuma();
+        }
+        private void CalcularSuma()
+        {
+            int total = 0;
+            foreach (DataGridViewRow suma in dgvLista.Rows)
+            {
+                //suma total de dinero
+                total += Convert.ToInt32(suma.Cells["saldo"].Value);
+                txtNumero.Text = Convert.ToString(total);
+                //suma total de registros
+                txtSuma.Text = Convert.ToString((dgvLista.Rows.Count));
+            }
+        }
+
+
     }
 }
