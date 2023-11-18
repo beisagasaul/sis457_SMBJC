@@ -63,7 +63,7 @@
             // c1Ribbon1
             // 
             this.c1Ribbon1.ApplicationMenuHolder = this.ribbonApplicationMenu1;
-            
+            this.c1Ribbon1.AutoSizeElement = C1.Framework.AutoSizeElement.Width;
             this.c1Ribbon1.BottomToolBarHolder = this.ribbonBottomToolBar1;
             this.c1Ribbon1.ConfigToolBarHolder = this.ribbonConfigToolBar1;
             this.c1Ribbon1.Location = new System.Drawing.Point(0, 0);
@@ -258,6 +258,7 @@
             this.btnCerrar.Size = new System.Drawing.Size(44, 35);
             this.btnCerrar.TabIndex = 11;
             this.btnCerrar.UseVisualStyleBackColor = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // Principal
             // 

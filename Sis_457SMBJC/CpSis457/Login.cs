@@ -25,7 +25,7 @@ namespace CpSis457
             // new Principal().ShowDialog();
             if (validar())
             {
-                var usuario = Usuariocl.validar(txtUsuario.Text, Util.Encrypt(txtClave.Text));
+                var usuario = Usuariocl.validar(txtUsuario.Text, txtClave.Text);
                 if (usuario != null)
                 {
                     //Si el usuario es autenticado correctamente
@@ -42,7 +42,7 @@ namespace CpSis457
                 else
                 {
                     MessageBox.Show("Usuario y/o contraseña incorrectos",
-                        "::: Minerva - Mensaje :::", MessageBoxButtons.OK,
+                        "::: Licoreria - Mensaje :::", MessageBoxButtons.OK,
                         MessageBoxIcon.Error);
                 }
             }
