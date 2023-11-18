@@ -28,5 +28,15 @@ namespace CpSis457
             new FrmProducto().ShowDialog();       
                 
         }
+
+        private void rbVenta_Click(object sender, EventArgs e)
+        {
+            new FrmVenta().ShowDialog();
+        }
+
+        private void rbDetalleVenta_Click(object sender, EventArgs e)
+        {
+            new FrmVentaDetalle().ShowDialog();
+        }
     }
 }

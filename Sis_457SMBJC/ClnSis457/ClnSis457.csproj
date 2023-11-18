@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="ProductoCl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ventacl.cs" />
     <Compile Include="VentaDetallecl.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -56,19 +56,20 @@
             this.ribbonButton6 = new C1.Win.C1Ribbon.RibbonButton();
             this.ribbonButton7 = new C1.Win.C1Ribbon.RibbonButton();
             this.ribbonTopToolBar1 = new C1.Win.C1Ribbon.RibbonTopToolBar();
+            this.btnCerrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).BeginInit();
             this.SuspendLayout();
             // 
             // c1Ribbon1
             // 
             this.c1Ribbon1.ApplicationMenuHolder = this.ribbonApplicationMenu1;
-        
+            this.c1Ribbon1.AutoSizeElement = C1.Framework.AutoSizeElement.Width;
             this.c1Ribbon1.BottomToolBarHolder = this.ribbonBottomToolBar1;
             this.c1Ribbon1.ConfigToolBarHolder = this.ribbonConfigToolBar1;
             this.c1Ribbon1.Location = new System.Drawing.Point(0, 0);
             this.c1Ribbon1.Name = "c1Ribbon1";
             this.c1Ribbon1.QatHolder = this.ribbonQat1;
-            this.c1Ribbon1.Size = new System.Drawing.Size(693, 161);
+            this.c1Ribbon1.Size = new System.Drawing.Size(840, 161);
             this.c1Ribbon1.Tabs.Add(this.ribbonTab1);
             this.c1Ribbon1.Tabs.Add(this.ribbonTab2);
             this.c1Ribbon1.Tabs.Add(this.ribbonTab3);
@@ -113,6 +114,7 @@
             this.rbVenta.Name = "rbVenta";
             this.rbVenta.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbVenta.SmallImage")));
             this.rbVenta.Text = "Ventas";
+            this.rbVenta.Click += new System.EventHandler(this.rbVenta_Click);
             // 
             // rbDetalleVenta
             // 
@@ -120,6 +122,7 @@
             this.rbDetalleVenta.Name = "rbDetalleVenta";
             this.rbDetalleVenta.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbDetalleVenta.SmallImage")));
             this.rbDetalleVenta.Text = "Detalle de Venta";
+            this.rbDetalleVenta.Click += new System.EventHandler(this.rbDetalleVenta_Click);
             // 
             // rbCliente
             // 
@@ -178,7 +181,7 @@
             // 
             // rbProducto
             // 
-            this.rbProducto.LargeImage = global::CpSis457.Properties.Resources.lapiz;
+            this.rbProducto.LargeImage = global::CpSis457.Properties.Resources.barril;
             this.rbProducto.Name = "rbProducto";
             this.rbProducto.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbProducto.SmallImage")));
             this.rbProducto.Text = "Productos";
@@ -242,14 +245,30 @@
             // 
             this.ribbonTopToolBar1.Name = "ribbonTopToolBar1";
             // 
+            // btnCerrar
+            // 
+            this.btnCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(38)))), ((int)(((byte)(70)))));
+            this.btnCerrar.BackgroundImage = global::CpSis457.Properties.Resources.borrar;
+            this.btnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCerrar.FlatAppearance.BorderSize = 0;
+            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrar.Font = new System.Drawing.Font("Century Gothic", 9.980198F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrar.Location = new System.Drawing.Point(796, 0);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(44, 35);
+            this.btnCerrar.TabIndex = 11;
+            this.btnCerrar.UseVisualStyleBackColor = false;
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SteelBlue;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(59)))), ((int)(((byte)(104)))));
             this.BackgroundImage = global::CpSis457.Properties.Resources.FONdo;
-            this.ClientSize = new System.Drawing.Size(693, 483);
+            this.ClientSize = new System.Drawing.Size(840, 476);
+            this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.c1Ribbon1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Principal";
             this.Text = "Principal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -288,5 +307,6 @@
         private C1.Win.C1Ribbon.RibbonButton rbProveedor;
         private C1.Win.C1Ribbon.RibbonButton rbUsuario;
         private C1.Win.C1Ribbon.RibbonButton rbEmpleado;
+        private System.Windows.Forms.Button btnCerrar;
     }
 }

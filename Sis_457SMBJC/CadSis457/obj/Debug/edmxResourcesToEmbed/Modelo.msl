@@ -105,6 +105,7 @@
     <EntitySetMapping Name="Venta">
       <EntityTypeMapping TypeName="LabSMBJCModel.Venta">
         <MappingFragment StoreEntitySet="Venta">
+          <ScalarProperty Name="idProducto" ColumnName="idProducto" />
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="transccion" ColumnName="transccion" />
           <ScalarProperty Name="fecha" ColumnName="fecha" />
@@ -152,19 +153,6 @@
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="nit" ColumnName="nit" />
           <ScalarProperty Name="razonSocial" ColumnName="razonSocial" />
-          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
-          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
-          <ScalarProperty Name="estado" ColumnName="estado" />
-        </ComplexTypeMapping>
-      </ResultMapping>
-    </FunctionImportMapping>
-    <FunctionImportMapping FunctionImportName="paUsuarioListar" FunctionName="LabSMBJCModel.Store.paUsuarioListar">
-      <ResultMapping>
-        <ComplexTypeMapping TypeName="LabSMBJCModel.paUsuarioListar_Result">
-          <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="idEmpleado" ColumnName="idEmpleado" />
-          <ScalarProperty Name="usuario" ColumnName="usuario" />
-          <ScalarProperty Name="clave" ColumnName="clave" />
           <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
           <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
           <ScalarProperty Name="estado" ColumnName="estado" />

@@ -90,3 +90,5 @@ C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\C1.Win.C1Touc
 C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\EntityFramework.xml
 C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\obj\Debug\CpSis457.csproj.CopyComplete
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\obj\Debug\CpSis457.FrmVenta.resources
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\obj\Debug\CpSis457.FrmVentaDetalle.resources

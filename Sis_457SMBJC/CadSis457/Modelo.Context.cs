@@ -161,11 +161,7 @@ public partial class LabSMBJCEntities : DbContext
         return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<paVentaListar_Result>("paVentaListar", parametroParameter);
     }
 
-        public object paDventaListar_Result(string parametro)
-        {
-            throw new NotImplementedException();
-        }
-    }
+}
 
 }
 

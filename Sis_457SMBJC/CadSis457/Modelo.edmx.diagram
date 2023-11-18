@@ -22,6 +22,7 @@
         <AssociationConnector Association="LabSMBJCModel.fk_VentaDetalle_Proveedor" ManuallyRouted="false" />
         <AssociationConnector Association="LabSMBJCModel.fk_Venta_Usuario" ManuallyRouted="false" />
         <AssociationConnector Association="LabSMBJCModel.fk_VentaDetalle_Venta" ManuallyRouted="false" />
+        <AssociationConnector Association="LabSMBJCModel.fk_Venta_Producto" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

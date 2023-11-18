@@ -43,6 +43,8 @@ public partial class Venta
 
     public short estado { get; set; }
 
+    public Nullable<int> idProducto { get; set; }
+
 
 
     public virtual Cliente Cliente { get; set; }
@@ -52,6 +54,8 @@ public partial class Venta
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
 
     public virtual ICollection<VentaDetalle> VentaDetalle { get; set; }
+
+    public virtual Producto Producto { get; set; }
 
 }
 

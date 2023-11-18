@@ -24,6 +24,8 @@ public partial class Producto
 
         this.CompraDetalle = new HashSet<CompraDetalle>();
 
+        this.Venta = new HashSet<Venta>();
+
     }
 
 
@@ -50,6 +52,10 @@ public partial class Producto
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
 
     public virtual ICollection<CompraDetalle> CompraDetalle { get; set; }
+
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+
+    public virtual ICollection<Venta> Venta { get; set; }
 
 }
 
