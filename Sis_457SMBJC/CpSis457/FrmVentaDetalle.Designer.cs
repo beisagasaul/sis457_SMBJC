@@ -31,11 +31,14 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmVentaDetalle));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.gbxDatos = new System.Windows.Forms.GroupBox();
+            this.numUnitario = new System.Windows.Forms.NumericUpDown();
+            this.numCantidad = new System.Windows.Forms.NumericUpDown();
             this.numTotal = new System.Windows.Forms.NumericUpDown();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
@@ -48,28 +51,26 @@
             this.label10 = new System.Windows.Forms.Label();
             this.btnExel = new System.Windows.Forms.Button();
             this.gbxLista = new System.Windows.Forms.GroupBox();
+            this.pnlAccion = new System.Windows.Forms.Panel();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnNuevo = new System.Windows.Forms.Button();
             this.dgvLista = new System.Windows.Forms.DataGridView();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtSuma = new System.Windows.Forms.TextBox();
-            this.pnlAccion = new System.Windows.Forms.Panel();
-            this.btnEliminar = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
-            this.btnNuevo = new System.Windows.Forms.Button();
-            this.numCantidad = new System.Windows.Forms.NumericUpDown();
-            this.numUnitario = new System.Windows.Forms.NumericUpDown();
             this.erpCantidad = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpUnitario = new System.Windows.Forms.ErrorProvider(this.components);
             this.erpTotal = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
             this.gbxDatos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numUnitario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCantidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numTotal)).BeginInit();
             this.gbxLista.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.pnlAccion.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numCantidad)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numUnitario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpCantidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpUnitario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpTotal)).BeginInit();
@@ -142,6 +143,20 @@
             this.gbxDatos.TabIndex = 14;
             this.gbxDatos.TabStop = false;
             this.gbxDatos.Text = "Mantenimiento de Detalle de Venta";
+            // 
+            // numUnitario
+            // 
+            this.numUnitario.Location = new System.Drawing.Point(76, 110);
+            this.numUnitario.Name = "numUnitario";
+            this.numUnitario.Size = new System.Drawing.Size(222, 25);
+            this.numUnitario.TabIndex = 24;
+            // 
+            // numCantidad
+            // 
+            this.numCantidad.Location = new System.Drawing.Point(76, 49);
+            this.numCantidad.Name = "numCantidad";
+            this.numCantidad.Size = new System.Drawing.Size(222, 25);
+            this.numCantidad.TabIndex = 23;
             // 
             // numTotal
             // 
@@ -282,6 +297,59 @@
             this.gbxLista.TabStop = false;
             this.gbxLista.Text = "Lista de Detalles de Venta Actuales";
             // 
+            // pnlAccion
+            // 
+            this.pnlAccion.Controls.Add(this.btnEliminar);
+            this.pnlAccion.Controls.Add(this.btnEditar);
+            this.pnlAccion.Controls.Add(this.btnNuevo);
+            this.pnlAccion.Location = new System.Drawing.Point(21, 392);
+            this.pnlAccion.Name = "pnlAccion";
+            this.pnlAccion.Size = new System.Drawing.Size(858, 44);
+            this.pnlAccion.TabIndex = 32;
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.BackColor = System.Drawing.Color.Green;
+            this.btnEliminar.Enabled = false;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 9.980198F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.ForeColor = System.Drawing.Color.White;
+            this.btnEliminar.Location = new System.Drawing.Point(94, 0);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(78, 44);
+            this.btnEliminar.TabIndex = 9;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.BackColor = System.Drawing.Color.Green;
+            this.btnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnEditar.Enabled = false;
+            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEditar.Font = new System.Drawing.Font("Century Gothic", 9.980198F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.ForeColor = System.Drawing.Color.White;
+            this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditar.Location = new System.Drawing.Point(3, 0);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(78, 44);
+            this.btnEditar.TabIndex = 8;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = false;
+            // 
+            // btnNuevo
+            // 
+            this.btnNuevo.BackColor = System.Drawing.Color.Green;
+            this.btnNuevo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnNuevo.Font = new System.Drawing.Font("Century Gothic", 9.980198F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevo.Location = new System.Drawing.Point(752, 0);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(78, 44);
+            this.btnNuevo.TabIndex = 7;
+            this.btnNuevo.Text = "Nuevo ";
+            this.btnNuevo.UseVisualStyleBackColor = false;
+            // 
             // dgvLista
             // 
             this.dgvLista.AllowUserToAddRows = false;
@@ -358,73 +426,6 @@
             this.txtSuma.Size = new System.Drawing.Size(103, 20);
             this.txtSuma.TabIndex = 30;
             // 
-            // pnlAccion
-            // 
-            this.pnlAccion.Controls.Add(this.btnEliminar);
-            this.pnlAccion.Controls.Add(this.btnEditar);
-            this.pnlAccion.Controls.Add(this.btnNuevo);
-            this.pnlAccion.Location = new System.Drawing.Point(21, 392);
-            this.pnlAccion.Name = "pnlAccion";
-            this.pnlAccion.Size = new System.Drawing.Size(858, 44);
-            this.pnlAccion.TabIndex = 32;
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.BackColor = System.Drawing.Color.Green;
-            this.btnEliminar.Enabled = false;
-            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 9.980198F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.ForeColor = System.Drawing.Color.White;
-            this.btnEliminar.Location = new System.Drawing.Point(94, 0);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(78, 44);
-            this.btnEliminar.TabIndex = 9;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = false;
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.BackColor = System.Drawing.Color.Green;
-            this.btnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnEditar.Enabled = false;
-            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnEditar.Font = new System.Drawing.Font("Century Gothic", 9.980198F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.ForeColor = System.Drawing.Color.White;
-            this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditar.Location = new System.Drawing.Point(3, 0);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(78, 44);
-            this.btnEditar.TabIndex = 8;
-            this.btnEditar.Text = "Editar";
-            this.btnEditar.UseVisualStyleBackColor = false;
-            // 
-            // btnNuevo
-            // 
-            this.btnNuevo.BackColor = System.Drawing.Color.Green;
-            this.btnNuevo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnNuevo.Font = new System.Drawing.Font("Century Gothic", 9.980198F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.Location = new System.Drawing.Point(752, 0);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(78, 44);
-            this.btnNuevo.TabIndex = 7;
-            this.btnNuevo.Text = "Nuevo ";
-            this.btnNuevo.UseVisualStyleBackColor = false;
-            // 
-            // numCantidad
-            // 
-            this.numCantidad.Location = new System.Drawing.Point(76, 49);
-            this.numCantidad.Name = "numCantidad";
-            this.numCantidad.Size = new System.Drawing.Size(222, 25);
-            this.numCantidad.TabIndex = 23;
-            // 
-            // numUnitario
-            // 
-            this.numUnitario.Location = new System.Drawing.Point(76, 110);
-            this.numUnitario.Name = "numUnitario";
-            this.numUnitario.Size = new System.Drawing.Size(222, 25);
-            this.numUnitario.TabIndex = 24;
-            // 
             // erpCantidad
             // 
             this.erpCantidad.ContainerControl = this;
@@ -457,18 +458,19 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmVentaDetalle";
             this.Text = "FrmVentaDetalle";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.gbxDatos.ResumeLayout(false);
             this.gbxDatos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numUnitario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCantidad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numTotal)).EndInit();
             this.gbxLista.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
             this.pnlAccion.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numCantidad)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numUnitario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpCantidad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpUnitario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erpTotal)).EndInit();

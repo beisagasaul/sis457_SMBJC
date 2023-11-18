@@ -30,6 +30,7 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmVenta));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCerrar = new System.Windows.Forms.Button();
@@ -112,7 +113,7 @@
             this.gbxLista.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.gbxLista.Location = new System.Drawing.Point(11, 308);
             this.gbxLista.Name = "gbxLista";
-            this.gbxLista.Size = new System.Drawing.Size(538, 189);
+            this.gbxLista.Size = new System.Drawing.Size(597, 189);
             this.gbxLista.TabIndex = 14;
             this.gbxLista.TabStop = false;
             this.gbxLista.Text = "Lista de Ventas";
@@ -148,7 +149,7 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SteelBlue;
             this.dgvLista.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvLista.Size = new System.Drawing.Size(526, 163);
+            this.dgvLista.Size = new System.Drawing.Size(585, 163);
             this.dgvLista.TabIndex = 0;
             // 
             // btnBuscar
@@ -428,6 +429,7 @@
             this.Controls.Add(this.gbxLista);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmVenta";
             this.Text = "FrmVenta";
             this.Load += new System.EventHandler(this.FrmVenta_Load);

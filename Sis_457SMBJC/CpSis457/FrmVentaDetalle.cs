@@ -19,7 +19,7 @@ namespace CpSis457
         {
             InitializeComponent();
         }
-        //crar funcion listar
+        //crar funcion listar 
         private void listar()
         {
             var ventadetalle = VentaDetallecl.listarPa(txtBuscar.Text.Trim());
