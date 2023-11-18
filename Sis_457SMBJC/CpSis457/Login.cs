@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClnSis457;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,7 +21,31 @@ namespace CpSis457
         
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            new Principal().ShowDialog();
+            //se ejecuta cuando cumple la validacion
+            // new Principal().ShowDialog();
+            if (validar())
+            {
+                var usuario = Usuariocl.validar(txtUsuario.Text, Util.Encrypt(txtClave.Text));
+                if (usuario != null)
+                {
+                    //Si el usuario es autenticado correctamente
+                    Util.usuario = usuario;
+                    //Limpia el contenido del campo de contraseña
+                    txtClave.Text = string.Empty;
+                    // Selecciona todo el texto en el campo de usuario
+                    txtUsuario.SelectAll();
+                    //Oculta el formulario actual 
+                    Visible = false;
+
+                    new Principal(this).ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Usuario y/o contraseña incorrectos",
+                        "::: Minerva - Mensaje :::", MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
+                }
+            }
 
         }
         //agrandar letras
@@ -62,8 +87,35 @@ namespace CpSis457
                 txtClave.UseSystemPasswordChar = false;
             }
         }
-        
+
         //Autenticacion
+
+        //validacion de campos usuario y contraseña
+        private bool validar()
+        {
+            bool esValido = true;
+            erpUsuario.SetError(txtUsuario, "");
+            erpClave.SetError(txtClave, "");
+            if (string.IsNullOrEmpty(txtUsuario.Text))
+            {
+                erpUsuario.SetError(txtUsuario, "El campo usuario es obligatorio");
+                esValido = false;
+            }
+            if (string.IsNullOrEmpty(txtClave.Text))
+            {
+                erpClave.SetError(txtClave, "El campo contraseña es obligatorio");
+                esValido = false;
+            }
+            return esValido;
+        }
+        //autenticarse con enter
+        private void txtClave_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter) btnIngresar.PerformClick();
+        }
+
+
+
 
     }
 }
