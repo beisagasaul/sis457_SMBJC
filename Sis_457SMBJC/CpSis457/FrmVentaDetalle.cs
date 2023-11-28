@@ -138,7 +138,7 @@ namespace CpSis457
             if (validar())
             {
                 var ventadetalle = new VentaDetalle();
-                ventadetalle.cantidad = numCantidad.Value;
+                ventadetalle.cantidad = (int)numCantidad.Value;
                 ventadetalle.precioUnitario = numUnitario.Value;
                 ventadetalle.total = numTotal.Value;
                 ventadetalle.usuarioRegistro = "sis257";

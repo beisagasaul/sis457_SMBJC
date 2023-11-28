@@ -151,7 +151,7 @@ namespace CpSis457
 
 
         //guardar nuevos nuevos registros
-        private void btnGuardar_Click(object sender, EventArgs e)
+        private void btnGuardar_Click(object sender, EventArgs e, Convert convert)
         {
             
            
@@ -176,7 +176,7 @@ namespace CpSis457
                 else
                 {
                     int index = dgvLista.CurrentCell.RowIndex;
-                    producto.id = Convert.ToInt32(dgvLista.Rows[index].Cells["id"].Value);
+                    producto.id = (int)convert.ToInt32(dgvLista.Rows[index].Cells["id"].Value);
                     ProductoCl.actualizar(producto);
                 }
                 listar();

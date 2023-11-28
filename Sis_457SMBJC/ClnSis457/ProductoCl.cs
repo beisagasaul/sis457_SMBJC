@@ -15,7 +15,7 @@ namespace ClnSis457
             {
                 context.Producto.Add(producto);
                 context.SaveChanges();
-                return producto.id;
+                return producto.idProducto;
             }
         }
 
@@ -23,22 +23,21 @@ namespace ClnSis457
         {
             using (var context = new LabSMBJCEntities())
             {
-                var existente = context.Producto.Find(producto.id);
+                var existente = context.Producto.Find(producto.idProducto);
                 existente.codigo = producto.codigo;
+                existente.nombre = producto.nombre;
                 existente.descripcion = producto.descripcion;
-                existente.unidadMedida = producto.unidadMedida;
-                existente.saldo = producto.saldo;
-                existente.precioVenta = producto.precioVenta;
+                existente.precio = producto.precio;
                 existente.usuarioRegistro = producto.usuarioRegistro;
                 return context.SaveChanges();
             }
         }
 
-        public static int eliminar(int id, string usuarioRegistro)
+        public static int eliminar(int idProducto, string usuarioRegistro)
         {
             using (var context = new LabSMBJCEntities())
             {
-                var existente = context.Producto.Find(id);
+                var existente = context.Producto.Find(idProducto);
                 existente.estado = -1;
                 existente.usuarioRegistro = usuarioRegistro;
                 return context.SaveChanges();

@@ -13,3 +13,7 @@ C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\ClnSis457\obj\Release\ClnSis457.
 C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\ClnSis457\obj\Release\ClnSis457.csproj.CopyComplete
 C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\ClnSis457\obj\Release\ClnSis457.dll
 C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\ClnSis457\obj\Release\ClnSis457.pdb
+C:\Users\neosj\OneDrive\Escritorio\proyecto de sis457\sis457_SMBJC\Sis_457SMBJC\ClnSis457\obj\Release\ClnSis457.csproj.AssemblyReference.cache
+C:\Users\neosj\OneDrive\Escritorio\proyecto de sis457\sis457_SMBJC\Sis_457SMBJC\ClnSis457\obj\Release\ClnSis457.csproj.CoreCompileInputs.cache
+C:\Users\neosj\OneDrive\Escritorio\proyecto de sis457\sis457_SMBJC\Sis_457SMBJC\ClnSis457\obj\Release\ClnSis457.dll
+C:\Users\neosj\OneDrive\Escritorio\proyecto de sis457\sis457_SMBJC\Sis_457SMBJC\ClnSis457\obj\Release\ClnSis457.pdb

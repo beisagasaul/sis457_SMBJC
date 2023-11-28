@@ -36,3 +36,15 @@ C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\bin\Release\EntityFrame
 C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\obj\Release\CpSis457.csproj.CopyComplete
 C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\obj\Release\CpSis457.exe
 C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\obj\Release\CpSis457.pdb
+C:\Users\neosj\OneDrive\Escritorio\proyecto de sis457\sis457_SMBJC\Sis_457SMBJC\CpSis457\obj\Release\CpSis457.csproj.AssemblyReference.cache
+C:\Users\neosj\OneDrive\Escritorio\proyecto de sis457\sis457_SMBJC\Sis_457SMBJC\CpSis457\obj\Release\CpSis457.FrmProducto.resources
+C:\Users\neosj\OneDrive\Escritorio\proyecto de sis457\sis457_SMBJC\Sis_457SMBJC\CpSis457\obj\Release\CpSis457.FrmVenta.resources
+C:\Users\neosj\OneDrive\Escritorio\proyecto de sis457\sis457_SMBJC\Sis_457SMBJC\CpSis457\obj\Release\CpSis457.FrmVentaDetalle.resources
+C:\Users\neosj\OneDrive\Escritorio\proyecto de sis457\sis457_SMBJC\Sis_457SMBJC\CpSis457\obj\Release\CpSis457.Login.resources
+C:\Users\neosj\OneDrive\Escritorio\proyecto de sis457\sis457_SMBJC\Sis_457SMBJC\CpSis457\obj\Release\CpSis457.Principal.resources
+C:\Users\neosj\OneDrive\Escritorio\proyecto de sis457\sis457_SMBJC\Sis_457SMBJC\CpSis457\obj\Release\CpSis457.Properties.Resources.resources
+C:\Users\neosj\OneDrive\Escritorio\proyecto de sis457\sis457_SMBJC\Sis_457SMBJC\CpSis457\obj\Release\CpSis457.csproj.GenerateResource.cache
+C:\Users\neosj\OneDrive\Escritorio\proyecto de sis457\sis457_SMBJC\Sis_457SMBJC\CpSis457\obj\Release\CpSis457.exe.licenses
+C:\Users\neosj\OneDrive\Escritorio\proyecto de sis457\sis457_SMBJC\Sis_457SMBJC\CpSis457\obj\Release\CpSis457.csproj.CoreCompileInputs.cache
+C:\Users\neosj\OneDrive\Escritorio\proyecto de sis457\sis457_SMBJC\Sis_457SMBJC\CpSis457\obj\Release\CpSis457.exe
+C:\Users\neosj\OneDrive\Escritorio\proyecto de sis457\sis457_SMBJC\Sis_457SMBJC\CpSis457\obj\Release\CpSis457.pdb

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "I7tYGPCVdENF16AS3GORN9xXM/ko5LWRqHOr9O2NtdiwPPYqY45vpVNY0h9FS7tpEm/pCoRDeuxhEn4pJ2oemw==",
+  "dgSpecHash": "PHFiSlKAu6yG/90Rsdmd67Pnn13XnDspEsXV/OYzPUcBQ8vrZUAQi3eDgCkpWnCUN3gWYjBKvIX3mQpH8P50NA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\neosj\\OneDrive\\Escritorio\\web 457\\sis457_SMBJC\\Sis_457SMBJC\\Web__SMBJC_MVC\\Web__SMBJC_MVC.csproj",
+  "projectFilePath": "C:\\Users\\neosj\\OneDrive\\Escritorio\\proyecto de sis457\\sis457_SMBJC\\Sis_457SMBJC\\Web__SMBJC_MVC\\Web__SMBJC_MVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\neosj\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\neosj\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

@@ -15,7 +15,7 @@ namespace ClnSis457
             {
                 context.Empleado.Add(empleado);
                 context.SaveChanges();
-                return empleado.id;
+                return empleado.idEmpleado;
             }
         }
 
@@ -23,14 +23,12 @@ namespace ClnSis457
         {
             using (var context = new LabSMBJCEntities())
             {
-                var existente = context.Empleado.Find(empleado.id);
-                existente.cedulaIdentidad = empleado.cedulaIdentidad;
-                existente.nombres = empleado.nombres;
-                existente.primerApellido = empleado.primerApellido;
-                existente.segudoApellido = empleado.segudoApellido;
-                existente.direccion = empleado.direccion;
+                var existente = context.Empleado.Find(empleado.idEmpleado);
+                existente.nombre = empleado.nombre;
+                existente.apellidos = empleado.apellidos;
+                existente.telefono = empleado.telefono;
                 existente.cargo = empleado.cargo;
-                existente.celular = empleado.celular;
+                existente.salario = empleado.salario;
                 existente.usuarioRegistro = empleado.usuarioRegistro;
                 return context.SaveChanges();
             }

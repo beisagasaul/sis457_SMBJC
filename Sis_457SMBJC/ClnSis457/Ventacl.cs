@@ -24,7 +24,9 @@ namespace ClnSis457
             using (var context = new LabSMBJCEntities())
             {
                 var existente = context.Venta.Find(venta.id);
-                existente.transccion = venta.transccion;
+                existente.idCliente = venta.idCliente;
+                existente.totalVenta = venta.totalVenta;
+                existente.usuarioRegistro = venta.usuarioRegistro;
                 return context.SaveChanges();
             }
         }

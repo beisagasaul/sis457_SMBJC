@@ -10,28 +10,28 @@ namespace ClnSis457
     public class VentaDetallecl
     {
         //insertar
-        public static int insertar(VentaDetalle ventadetalle)
+        public static int insertar(VentaDetalle ventaDetalle)
         {
             using (var context = new LabSMBJCEntities())
             {
-                context.VentaDetalle.Add(ventadetalle);
+                context.VentaDetalle.Add(ventaDetalle);
                 context.SaveChanges();
-                return ventadetalle.id;
+                return ventaDetalle.id;
             }
         }
         //actualizar
-        public static int actualizar(VentaDetalle ventadetalle)
+        public static int actualizar(VentaDetalle ventaDetalle)
         {
             using (var context = new LabSMBJCEntities())
             {
-                var existe = context.VentaDetalle.Find(ventadetalle.id);
+                var existe = context.VentaDetalle.Find(ventaDetalle.id);
 
-                existe.cantidad = ventadetalle.cantidad;
-                existe.precioUnitario = ventadetalle.precioUnitario;
-                existe.total = ventadetalle.total;
-                existe.usuarioRegistro = ventadetalle.usuarioRegistro;
-                existe.fechaRegistro = ventadetalle.fechaRegistro;
-                return context.SaveChanges();
+                var existente = context.VentaDetalle.Find(ventaDetalle.id);
+                existente.cantidad = ventaDetalle.cantidad;
+                existente.precioUnitario = ventaDetalle.precioUnitario;
+                existente.total = ventaDetalle.total;
+                existente.usuarioRegistro = ventaDetalle.usuarioRegistro;
+                return context.SaveChanges()
             }
         }
         //eliminar

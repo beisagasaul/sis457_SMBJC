@@ -10,3 +10,15 @@ C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CadSis457\obj\Release\CadSis457.
 C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CadSis457\obj\Release\CadSis457.csproj.CopyComplete
 C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CadSis457\obj\Release\CadSis457.dll
 C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CadSis457\obj\Release\CadSis457.pdb
+C:\Users\neosj\OneDrive\Escritorio\proyecto de sis457\sis457_SMBJC\Sis_457SMBJC\CadSis457\bin\Release\CadSis457.dll.config
+C:\Users\neosj\OneDrive\Escritorio\proyecto de sis457\sis457_SMBJC\Sis_457SMBJC\CadSis457\bin\Release\CadSis457.dll
+C:\Users\neosj\OneDrive\Escritorio\proyecto de sis457\sis457_SMBJC\Sis_457SMBJC\CadSis457\bin\Release\CadSis457.pdb
+C:\Users\neosj\OneDrive\Escritorio\proyecto de sis457\sis457_SMBJC\Sis_457SMBJC\CadSis457\bin\Release\EntityFramework.dll
+C:\Users\neosj\OneDrive\Escritorio\proyecto de sis457\sis457_SMBJC\Sis_457SMBJC\CadSis457\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\neosj\OneDrive\Escritorio\proyecto de sis457\sis457_SMBJC\Sis_457SMBJC\CadSis457\bin\Release\EntityFramework.xml
+C:\Users\neosj\OneDrive\Escritorio\proyecto de sis457\sis457_SMBJC\Sis_457SMBJC\CadSis457\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\neosj\OneDrive\Escritorio\proyecto de sis457\sis457_SMBJC\Sis_457SMBJC\CadSis457\obj\Release\CadSis457.csproj.AssemblyReference.cache
+C:\Users\neosj\OneDrive\Escritorio\proyecto de sis457\sis457_SMBJC\Sis_457SMBJC\CadSis457\obj\Release\CadSis457.csproj.CoreCompileInputs.cache
+C:\Users\neosj\OneDrive\Escritorio\proyecto de sis457\sis457_SMBJC\Sis_457SMBJC\CadSis457\obj\Release\CadSis457.csproj.CopyComplete
+C:\Users\neosj\OneDrive\Escritorio\proyecto de sis457\sis457_SMBJC\Sis_457SMBJC\CadSis457\obj\Release\CadSis457.dll
+C:\Users\neosj\OneDrive\Escritorio\proyecto de sis457\sis457_SMBJC\Sis_457SMBJC\CadSis457\obj\Release\CadSis457.pdb

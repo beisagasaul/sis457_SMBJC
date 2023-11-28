@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\neosj\\OneDrive\\Escritorio\\web 457\\sis457_SMBJC\\Sis_457SMBJC\\Web__SMBJC_MVC\\Web__SMBJC_MVC.csproj": {}
+    "C:\\Users\\neosj\\OneDrive\\Escritorio\\proyecto de sis457\\sis457_SMBJC\\Sis_457SMBJC\\Web__SMBJC_MVC\\Web__SMBJC_MVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\neosj\\OneDrive\\Escritorio\\web 457\\sis457_SMBJC\\Sis_457SMBJC\\Web__SMBJC_MVC\\Web__SMBJC_MVC.csproj": {
+    "C:\\Users\\neosj\\OneDrive\\Escritorio\\proyecto de sis457\\sis457_SMBJC\\Sis_457SMBJC\\Web__SMBJC_MVC\\Web__SMBJC_MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\neosj\\OneDrive\\Escritorio\\web 457\\sis457_SMBJC\\Sis_457SMBJC\\Web__SMBJC_MVC\\Web__SMBJC_MVC.csproj",
+        "projectUniqueName": "C:\\Users\\neosj\\OneDrive\\Escritorio\\proyecto de sis457\\sis457_SMBJC\\Sis_457SMBJC\\Web__SMBJC_MVC\\Web__SMBJC_MVC.csproj",
         "projectName": "Web__SMBJC_MVC",
-        "projectPath": "C:\\Users\\neosj\\OneDrive\\Escritorio\\web 457\\sis457_SMBJC\\Sis_457SMBJC\\Web__SMBJC_MVC\\Web__SMBJC_MVC.csproj",
+        "projectPath": "C:\\Users\\neosj\\OneDrive\\Escritorio\\proyecto de sis457\\sis457_SMBJC\\Sis_457SMBJC\\Web__SMBJC_MVC\\Web__SMBJC_MVC.csproj",
         "packagesPath": "C:\\Users\\neosj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\neosj\\OneDrive\\Escritorio\\web 457\\sis457_SMBJC\\Sis_457SMBJC\\Web__SMBJC_MVC\\obj\\",
+        "outputPath": "C:\\Users\\neosj\\OneDrive\\Escritorio\\proyecto de sis457\\sis457_SMBJC\\Sis_457SMBJC\\Web__SMBJC_MVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\neosj\\AppData\\Roaming\\NuGet\\NuGet.Config",
