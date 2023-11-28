@@ -29,19 +29,17 @@ public partial class Cliente
 
     public int id { get; set; }
 
-    public long nit { get; set; }
-
     public string razonSocial { get; set; }
+
+    public string cedulaIdentidad { get; set; }
+
+    public string celular { get; set; }
 
     public string usuarioRegistro { get; set; }
 
     public System.DateTime fechaRegistro { get; set; }
 
     public short estado { get; set; }
-
-    public string cedulaIdentidad { get; set; }
-
-    public string celular { get; set; }
 
 
 

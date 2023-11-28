@@ -13,9 +13,8 @@ namespace CadSis457
 {
 
 using System;
-    using System.Collections.Generic;
     
-public partial class VentaDetalle
+public partial class paVentaDetalleListar_Result
 {
 
     public int id { get; set; }
@@ -36,11 +35,9 @@ public partial class VentaDetalle
 
     public short estado { get; set; }
 
+    public string nombre { get; set; }
 
-
-    public virtual Producto Producto { get; set; }
-
-    public virtual Venta Venta { get; set; }
+    public string razonSocial { get; set; }
 
 }
 

@@ -15,20 +15,21 @@ namespace CadSis457
 using System;
     using System.Collections.Generic;
     
-public partial class CompraDetalle
+public partial class Categoria
 {
 
-    public int id { get; set; }
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+    public Categoria()
+    {
 
-    public int idCompra { get; set; }
+        this.Producto = new HashSet<Producto>();
 
-    public int idProducto { get; set; }
+    }
 
-    public decimal cantidad { get; set; }
 
-    public decimal precioUnitario { get; set; }
+    public int idCategoria { get; set; }
 
-    public decimal total { get; set; }
+    public string nombre { get; set; }
 
     public string usuarioRegistro { get; set; }
 
@@ -38,9 +39,9 @@ public partial class CompraDetalle
 
 
 
-    public virtual Compra Compra { get; set; }
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
 
-    public virtual Producto Producto { get; set; }
+    public virtual ICollection<Producto> Producto { get; set; }
 
 }
 

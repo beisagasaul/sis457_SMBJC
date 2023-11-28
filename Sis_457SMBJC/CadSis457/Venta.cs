@@ -29,13 +29,13 @@ public partial class Venta
 
     public int id { get; set; }
 
-    public string transccion { get; set; }
-
-    public System.DateTime fecha { get; set; }
-
     public int idUsuario { get; set; }
 
     public int idCliente { get; set; }
+
+    public decimal totalVenta { get; set; }
+
+    public System.DateTime fechaVenta { get; set; }
 
     public string usuarioRegistro { get; set; }
 
@@ -43,19 +43,15 @@ public partial class Venta
 
     public short estado { get; set; }
 
-    public Nullable<int> idProducto { get; set; }
 
 
+    public virtual Cliente Cliente { get; set; }
 
     public virtual Usuario Usuario { get; set; }
 
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
 
     public virtual ICollection<VentaDetalle> VentaDetalle { get; set; }
-
-    public virtual Producto Producto { get; set; }
-
-    public virtual Cliente Cliente { get; set; }
 
 }
 

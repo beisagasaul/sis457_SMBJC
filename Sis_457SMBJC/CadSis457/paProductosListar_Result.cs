@@ -13,19 +13,9 @@ namespace CadSis457
 {
 
 using System;
-    using System.Collections.Generic;
     
-public partial class Producto
+public partial class paProductosListar_Result
 {
-
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-    public Producto()
-    {
-
-        this.VentaDetalle = new HashSet<VentaDetalle>();
-
-    }
-
 
     public int idProducto { get; set; }
 
@@ -45,13 +35,7 @@ public partial class Producto
 
     public short estado { get; set; }
 
-
-
-    public virtual Categoria Categoria { get; set; }
-
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-
-    public virtual ICollection<VentaDetalle> VentaDetalle { get; set; }
+    public string categoria { get; set; }
 
 }
 

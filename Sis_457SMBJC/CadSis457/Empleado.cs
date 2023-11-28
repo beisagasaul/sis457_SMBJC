@@ -27,21 +27,17 @@ public partial class Empleado
     }
 
 
-    public int id { get; set; }
+    public int idEmpleado { get; set; }
 
-    public string cedulaIdentidad { get; set; }
+    public string nombre { get; set; }
 
-    public string nombres { get; set; }
+    public string apellidos { get; set; }
 
-    public string primerApellido { get; set; }
-
-    public string segudoApellido { get; set; }
-
-    public string direccion { get; set; }
-
-    public long celular { get; set; }
+    public string telefono { get; set; }
 
     public string cargo { get; set; }
+
+    public double salario { get; set; }
 
     public string usuarioRegistro { get; set; }
 

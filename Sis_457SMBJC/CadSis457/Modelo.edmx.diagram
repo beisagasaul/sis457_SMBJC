@@ -4,25 +4,20 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="21f108b9721240d6896acd794e3eaea8" Name="Diagram1">
-        <EntityTypeShape EntityType="LabSMBJCModel.Compra" Width="1.5" PointX="7.5" PointY="5.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="LabSMBJCModel.CompraDetalle" Width="1.5" PointX="9.75" PointY="5.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="LabSMBJCModel.Empleado" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="LabSMBJCModel.Producto" Width="1.5" PointX="7.5" PointY="9.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="LabSMBJCModel.Proveedor" Width="1.5" PointX="5.25" PointY="5.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="LabSMBJCModel.Usuario" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="LabSMBJCModel.Venta" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="LabSMBJCModel.VentaDetalle" Width="1.5" PointX="7.5" PointY="1.125" IsExpanded="true" />
-        <AssociationConnector Association="LabSMBJCModel.fk_Compra_Proveedor" ManuallyRouted="false" />
-        <AssociationConnector Association="LabSMBJCModel.fk_CompraDetalle_Compra" ManuallyRouted="false" />
-        <AssociationConnector Association="LabSMBJCModel.fk_CompraDetalle_Producto" ManuallyRouted="false" />
-        <AssociationConnector Association="LabSMBJCModel.fk_Usuario_Empleado" ManuallyRouted="false" />
-        <AssociationConnector Association="LabSMBJCModel.fk_VentaDetalle_Proveedor" ManuallyRouted="false" />
-        <AssociationConnector Association="LabSMBJCModel.fk_Venta_Usuario" ManuallyRouted="false" />
-        <AssociationConnector Association="LabSMBJCModel.fk_VentaDetalle_Venta" ManuallyRouted="false" />
-        <AssociationConnector Association="LabSMBJCModel.fk_Venta_Producto" />
-        <EntityTypeShape EntityType="LabSMBJCModel.Cliente" Width="1.5" PointX="0.75" PointY="6" />
+      <Diagram DiagramId="21f108b9721240d6896acd794e3eaea8" Name="Diagram1" ZoomLevel="85">
+        <EntityTypeShape EntityType="LabSMBJCModel.Categoria" Width="1.5" PointX="13.375" PointY="5" />
+        <EntityTypeShape EntityType="LabSMBJCModel.Cliente" Width="1.5" PointX="7.75" PointY="4.5" />
+        <EntityTypeShape EntityType="LabSMBJCModel.Empleado" Width="1.5" PointX="6.375" PointY="0.625" />
+        <EntityTypeShape EntityType="LabSMBJCModel.Producto" Width="1.5" PointX="10.625" PointY="4.125" />
+        <EntityTypeShape EntityType="LabSMBJCModel.Usuario" Width="1.5" PointX="8.625" PointY="0.625" />
+        <EntityTypeShape EntityType="LabSMBJCModel.Venta" Width="1.5" PointX="10.875" PointY="0.5" />
+        <EntityTypeShape EntityType="LabSMBJCModel.VentaDetalle" Width="1.5" PointX="13.125" PointY="0.5" />
+        <AssociationConnector Association="LabSMBJCModel.FK__Producto__idCate__3D5E1FD2" />
         <AssociationConnector Association="LabSMBJCModel.fk_Venta_Cliente" />
+        <AssociationConnector Association="LabSMBJCModel.FK__Usuario__idEmple__38996AB5" />
+        <AssociationConnector Association="LabSMBJCModel.fk_VentaDetalle_Producto" />
+        <AssociationConnector Association="LabSMBJCModel.fk_Venta_Usuario" />
+        <AssociationConnector Association="LabSMBJCModel.fk_VentaDetalle_Venta" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

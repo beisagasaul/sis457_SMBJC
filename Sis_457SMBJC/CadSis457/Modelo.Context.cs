@@ -35,23 +35,19 @@ public partial class LabSMBJCEntities : DbContext
     }
 
 
-    public virtual DbSet<Compra> Compra { get; set; }
+    public virtual DbSet<Categoria> Categoria { get; set; }
 
-    public virtual DbSet<CompraDetalle> CompraDetalle { get; set; }
+    public virtual DbSet<Cliente> Cliente { get; set; }
 
     public virtual DbSet<Empleado> Empleado { get; set; }
 
     public virtual DbSet<Producto> Producto { get; set; }
-
-    public virtual DbSet<Proveedor> Proveedor { get; set; }
 
     public virtual DbSet<Usuario> Usuario { get; set; }
 
     public virtual DbSet<Venta> Venta { get; set; }
 
     public virtual DbSet<VentaDetalle> VentaDetalle { get; set; }
-
-    public virtual DbSet<Cliente> Cliente { get; set; }
 
 
     public virtual ObjectResult<paProductoListar_Result> paProductoListar(string parametro)
@@ -159,6 +155,30 @@ public partial class LabSMBJCEntities : DbContext
 
 
         return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<paVentaListar_Result>("paVentaListar", parametroParameter);
+    }
+
+
+    public virtual ObjectResult<paProductosListar_Result> paProductosListar(string parametro)
+    {
+
+        var parametroParameter = parametro != null ?
+            new ObjectParameter("parametro", parametro) :
+            new ObjectParameter("parametro", typeof(string));
+
+
+        return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<paProductosListar_Result>("paProductosListar", parametroParameter);
+    }
+
+
+    public virtual ObjectResult<paVentaDetalleListar_Result> paVentaDetalleListar(string parametro)
+    {
+
+        var parametroParameter = parametro != null ?
+            new ObjectParameter("parametro", parametro) :
+            new ObjectParameter("parametro", typeof(string));
+
+
+        return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<paVentaDetalleListar_Result>("paVentaDetalleListar", parametroParameter);
     }
 
 }

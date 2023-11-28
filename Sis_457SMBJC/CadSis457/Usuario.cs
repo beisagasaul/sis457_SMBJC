@@ -27,7 +27,7 @@ public partial class Usuario
     }
 
 
-    public int id { get; set; }
+    public int idUsuario { get; set; }
 
     public int idEmpleado { get; set; }
 
@@ -40,8 +40,6 @@ public partial class Usuario
     public System.DateTime fechaRegistro { get; set; }
 
     public short estado { get; set; }
-
-    public string cargo { get; set; }
 
 
 
