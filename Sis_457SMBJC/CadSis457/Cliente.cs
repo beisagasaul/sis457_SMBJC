@@ -39,6 +39,10 @@ public partial class Cliente
 
     public short estado { get; set; }
 
+    public string cedulaIdentidad { get; set; }
+
+    public string celular { get; set; }
+
 
 
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

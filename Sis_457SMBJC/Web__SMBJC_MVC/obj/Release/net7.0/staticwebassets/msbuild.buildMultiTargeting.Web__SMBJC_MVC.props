@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Web__SMBJC_MVC.props" />
+</Project>

@@ -1,0 +1,15 @@
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\ClnSis457\bin\Release\ClnSis457.dll.config
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\ClnSis457\bin\Release\ClnSis457.dll
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\ClnSis457\bin\Release\ClnSis457.pdb
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\ClnSis457\bin\Release\CadSis457.dll
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\ClnSis457\bin\Release\EntityFramework.dll
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\ClnSis457\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\ClnSis457\bin\Release\CadSis457.pdb
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\ClnSis457\bin\Release\CadSis457.dll.config
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\ClnSis457\bin\Release\EntityFramework.xml
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\ClnSis457\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\ClnSis457\obj\Release\ClnSis457.csproj.AssemblyReference.cache
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\ClnSis457\obj\Release\ClnSis457.csproj.CoreCompileInputs.cache
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\ClnSis457\obj\Release\ClnSis457.csproj.CopyComplete
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\ClnSis457\obj\Release\ClnSis457.dll
+C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\ClnSis457\obj\Release\ClnSis457.pdb

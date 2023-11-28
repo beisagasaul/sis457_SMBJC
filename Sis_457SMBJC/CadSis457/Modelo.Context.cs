@@ -35,8 +35,6 @@ public partial class LabSMBJCEntities : DbContext
     }
 
 
-    public virtual DbSet<Cliente> Cliente { get; set; }
-
     public virtual DbSet<Compra> Compra { get; set; }
 
     public virtual DbSet<CompraDetalle> CompraDetalle { get; set; }
@@ -52,6 +50,8 @@ public partial class LabSMBJCEntities : DbContext
     public virtual DbSet<Venta> Venta { get; set; }
 
     public virtual DbSet<VentaDetalle> VentaDetalle { get; set; }
+
+    public virtual DbSet<Cliente> Cliente { get; set; }
 
 
     public virtual ObjectResult<paProductoListar_Result> paProductoListar(string parametro)

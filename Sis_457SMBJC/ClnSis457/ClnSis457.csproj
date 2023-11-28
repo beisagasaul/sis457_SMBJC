@@ -48,6 +48,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clientecl.cs" />
+    <Compile Include="Empleadocl.cs" />
     <Compile Include="ProductoCl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Usuariocl.cs" />
