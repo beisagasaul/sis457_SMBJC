@@ -17,12 +17,8 @@ using System;
     
 public partial class Producto
 {
-        public string unidadMedida;
-        public decimal saldo;
-        public decimal precioVenta;
-        public object[] id;
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
     public Producto()
     {
 

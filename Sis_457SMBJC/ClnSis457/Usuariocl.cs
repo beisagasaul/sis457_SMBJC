@@ -8,20 +8,21 @@ using System.Threading.Tasks;
 
 
 namespace ClnSis457
+{ 
     public class UsuarioCln
-{
-    public static int insertar(Usuario usuario)
     {
+        public static int insertar(Usuario usuario)
+        {
         using (var context = new LabSMBJCEntities())
         {
             context.Usuario.Add(usuario);
             context.SaveChanges();
             return usuario.idUsuario;
         }
-    }
+        }
 
-    public static int actualizar(Usuario usuario)
-    {
+        public static int actualizar(Usuario usuario)
+        {
         using (var context = new LabSMBJCEntities())
         {
             var existente = context.Usuario.Find(usuario.idUsuario);
@@ -30,10 +31,10 @@ namespace ClnSis457
             existente.usuarioRegistro = usuario.usuarioRegistro;
             return context.SaveChanges();
         }
-    }
+        }
 
-    public static int cambiarClave(int id, string clave, string usuarioRegistro)
-    {
+        public static int cambiarClave(int id, string clave, string usuarioRegistro)
+        {
         using (var contexto = new LabSMBJCEntities())
         {
             var existente = contexto.Usuario.Find(id);
@@ -41,10 +42,10 @@ namespace ClnSis457
             existente.usuarioRegistro = usuarioRegistro;
             return contexto.SaveChanges();
         }
-    }
+        }
 
-    public static int eliminar(int id, string usuario)
-    {
+        public static int eliminar(int id, string usuario)
+        {
         using (var contexto = new LabSMBJCEntities())
         {
             var existente = contexto.Usuario.Find(id);
@@ -52,33 +53,33 @@ namespace ClnSis457
             existente.usuarioRegistro = usuario;
             return contexto.SaveChanges();
         }
-    }
+        }
 
-    public static Usuario get(int id)
-    {
+        public static Usuario get(int id)
+        {
         using (var contexto = new LabSMBJCEntities())
         {
             return contexto.Usuario.Find(id);
         }
-    }
+        }
 
-    public static Usuario validar(string usuario, string clave)
-    {
+        public static Usuario validar(string usuario, string clave)
+        {
         using (var contexto = new LabSMBJCEntities())
         {
             return contexto.Usuario
                 .Where(x => x.usuario1 == usuario && x.clave == clave && x.estado == 1)
                 .FirstOrDefault();
         }
-    }
+        }
 
-    public static List<Usuario> listar()
-    {
+        public static List<Usuario> listar()
+        {
         using (var contexto = new LabSMBJCEntities())
         {
             return contexto.Usuario.Where(x => x.estado != -1).ToList();
         }
-    }
+        }
 
-}
+    }
 }

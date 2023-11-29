@@ -94,7 +94,7 @@
           <Property Name="fechaRegistro" Type="datetime" Nullable="false" />
           <Property Name="estado" Type="smallint" Nullable="false" />
         </EntityType>
-        <Association Name="FK__Producto__idCate__3D5E1FD2">
+        <Association Name="FK__Producto__idCate__403A8C7D">
           <End Role="Categoria" Type="Self.Categoria" Multiplicity="1" />
           <End Role="Producto" Type="Self.Producto" Multiplicity="*" />
           <ReferentialConstraint>
@@ -106,7 +106,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Usuario__idEmple__38996AB5">
+        <Association Name="FK__Usuario__idEmple__398D8EEE">
           <End Role="Empleado" Type="Self.Empleado" Multiplicity="1" />
           <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
           <ReferentialConstraint>
@@ -189,11 +189,11 @@
           <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Venta" EntityType="Self.Venta" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="VentaDetalle" EntityType="Self.VentaDetalle" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK__Producto__idCate__3D5E1FD2" Association="Self.FK__Producto__idCate__3D5E1FD2">
+          <AssociationSet Name="FK__Producto__idCate__403A8C7D" Association="Self.FK__Producto__idCate__403A8C7D">
             <End Role="Categoria" EntitySet="Categoria" />
             <End Role="Producto" EntitySet="Producto" />
           </AssociationSet>
-          <AssociationSet Name="FK__Usuario__idEmple__38996AB5" Association="Self.FK__Usuario__idEmple__38996AB5">
+          <AssociationSet Name="FK__Usuario__idEmple__398D8EEE" Association="Self.FK__Usuario__idEmple__398D8EEE">
             <End Role="Empleado" EntitySet="Empleado" />
             <End Role="Usuario" EntitySet="Usuario" />
           </AssociationSet>
@@ -246,6 +246,12 @@
           <FunctionImport Name="paVentaListar" ReturnType="Collection(LabSMBJCModel.paVentaListar_Result)">
           <Parameter Name="parametro" Mode="In" Type="String" />
           </FunctionImport>
+          <FunctionImport Name="paProductosListar" ReturnType="Collection(LabSMBJCModel.paProductosListar_Result)">
+          <Parameter Name="parametro" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="paVentaDetalleListar" ReturnType="Collection(LabSMBJCModel.paVentaDetalleListar_Result)">
+          <Parameter Name="parametro" Mode="In" Type="String" />
+          </FunctionImport>
           <EntitySet Name="Categoria" EntityType="LabSMBJCModel.Categoria" />
           <EntitySet Name="Cliente" EntityType="LabSMBJCModel.Cliente" />
           <EntitySet Name="Empleado" EntityType="LabSMBJCModel.Empleado" />
@@ -253,7 +259,7 @@
           <EntitySet Name="Usuario" EntityType="LabSMBJCModel.Usuario" />
           <EntitySet Name="Venta" EntityType="LabSMBJCModel.Venta" />
           <EntitySet Name="VentaDetalle" EntityType="LabSMBJCModel.VentaDetalle" />
-          <AssociationSet Name="FK__Producto__idCate__3D5E1FD2" Association="LabSMBJCModel.FK__Producto__idCate__3D5E1FD2">
+          <AssociationSet Name="FK__Producto__idCate__403A8C7D" Association="LabSMBJCModel.FK__Producto__idCate__403A8C7D">
             <End Role="Categoria" EntitySet="Categoria" />
             <End Role="Producto" EntitySet="Producto" />
           </AssociationSet>
@@ -261,7 +267,7 @@
             <End Role="Cliente" EntitySet="Cliente" />
             <End Role="Venta" EntitySet="Venta" />
           </AssociationSet>
-          <AssociationSet Name="FK__Usuario__idEmple__38996AB5" Association="LabSMBJCModel.FK__Usuario__idEmple__38996AB5">
+          <AssociationSet Name="FK__Usuario__idEmple__398D8EEE" Association="LabSMBJCModel.FK__Usuario__idEmple__398D8EEE">
             <End Role="Empleado" EntitySet="Empleado" />
             <End Role="Usuario" EntitySet="Usuario" />
           </AssociationSet>
@@ -277,12 +283,6 @@
             <End Role="Venta" EntitySet="Venta" />
             <End Role="VentaDetalle" EntitySet="VentaDetalle" />
           </AssociationSet>
-          <FunctionImport Name="paProductosListar" ReturnType="Collection(LabSMBJCModel.paProductosListar_Result)">
-            <Parameter Name="parametro" Mode="In" Type="String" />
-          </FunctionImport>
-          <FunctionImport Name="paVentaDetalleListar" ReturnType="Collection(LabSMBJCModel.paVentaDetalleListar_Result)">
-            <Parameter Name="parametro" Mode="In" Type="String" />
-          </FunctionImport>
         </EntityContainer>
         <ComplexType Name="paProductoListar_Result">
           <Property Type="Int32" Name="id" Nullable="false" />
@@ -377,6 +377,31 @@
           <Property Type="DateTime" Name="fechaRegistro" Nullable="false" Precision="23" />
           <Property Type="Int16" Name="estado" Nullable="false" />
         </ComplexType>
+        <ComplexType Name="paProductosListar_Result">
+          <Property Type="Int32" Name="idProducto" Nullable="false" />
+          <Property Type="Int32" Name="idCategoria" Nullable="false" />
+          <Property Type="String" Name="codigo" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="nombre" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="descripcion" Nullable="false" MaxLength="500" />
+          <Property Type="Decimal" Name="precio" Nullable="false" Precision="5" Scale="2" />
+          <Property Type="String" Name="usuarioRegistro" Nullable="false" MaxLength="50" />
+          <Property Type="DateTime" Name="fechaRegistro" Nullable="false" Precision="23" />
+          <Property Type="Int16" Name="estado" Nullable="false" />
+          <Property Type="String" Name="categoria" Nullable="false" MaxLength="30" />
+        </ComplexType>
+        <ComplexType Name="paVentaDetalleListar_Result">
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="Int32" Name="idVenta" Nullable="false" />
+          <Property Type="Int32" Name="idProducto" Nullable="false" />
+          <Property Type="Int32" Name="cantidad" Nullable="false" />
+          <Property Type="Decimal" Name="precioUnitario" Nullable="false" Precision="18" Scale="0" />
+          <Property Type="Decimal" Name="total" Nullable="false" Precision="18" Scale="0" />
+          <Property Type="String" Name="usuarioRegistro" Nullable="false" MaxLength="50" />
+          <Property Type="DateTime" Name="fechaRegistro" Nullable="false" Precision="23" />
+          <Property Type="Int16" Name="estado" Nullable="false" />
+          <Property Type="String" Name="nombre" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="razonSocial" Nullable="false" MaxLength="50" />
+        </ComplexType>
         <EntityType Name="Categoria">
           <Key>
             <PropertyRef Name="idCategoria" />
@@ -386,7 +411,7 @@
           <Property Name="usuarioRegistro" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="estado" Type="Int16" Nullable="false" />
-          <NavigationProperty Name="Producto" Relationship="LabSMBJCModel.FK__Producto__idCate__3D5E1FD2" FromRole="Categoria" ToRole="Producto" />
+          <NavigationProperty Name="Producto" Relationship="LabSMBJCModel.FK__Producto__idCate__403A8C7D" FromRole="Categoria" ToRole="Producto" />
         </EntityType>
         <EntityType Name="Cliente">
           <Key>
@@ -414,7 +439,7 @@
           <Property Name="usuarioRegistro" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="estado" Type="Int16" Nullable="false" />
-          <NavigationProperty Name="Usuario" Relationship="LabSMBJCModel.FK__Usuario__idEmple__38996AB5" FromRole="Empleado" ToRole="Usuario" />
+          <NavigationProperty Name="Usuario" Relationship="LabSMBJCModel.FK__Usuario__idEmple__398D8EEE" FromRole="Empleado" ToRole="Usuario" />
         </EntityType>
         <EntityType Name="Producto">
           <Key>
@@ -429,7 +454,7 @@
           <Property Name="usuarioRegistro" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="estado" Type="Int16" Nullable="false" />
-          <NavigationProperty Name="Categoria" Relationship="LabSMBJCModel.FK__Producto__idCate__3D5E1FD2" FromRole="Producto" ToRole="Categoria" />
+          <NavigationProperty Name="Categoria" Relationship="LabSMBJCModel.FK__Producto__idCate__403A8C7D" FromRole="Producto" ToRole="Categoria" />
           <NavigationProperty Name="VentaDetalle" Relationship="LabSMBJCModel.fk_VentaDetalle_Producto" FromRole="Producto" ToRole="VentaDetalle" />
         </EntityType>
         <EntityType Name="Usuario">
@@ -443,7 +468,7 @@
           <Property Name="usuarioRegistro" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="fechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="estado" Type="Int16" Nullable="false" />
-          <NavigationProperty Name="Empleado" Relationship="LabSMBJCModel.FK__Usuario__idEmple__38996AB5" FromRole="Usuario" ToRole="Empleado" />
+          <NavigationProperty Name="Empleado" Relationship="LabSMBJCModel.FK__Usuario__idEmple__398D8EEE" FromRole="Usuario" ToRole="Empleado" />
           <NavigationProperty Name="Venta" Relationship="LabSMBJCModel.fk_Venta_Usuario" FromRole="Usuario" ToRole="Venta" />
         </EntityType>
         <EntityType Name="Venta">
@@ -478,7 +503,7 @@
           <NavigationProperty Name="Producto" Relationship="LabSMBJCModel.fk_VentaDetalle_Producto" FromRole="VentaDetalle" ToRole="Producto" />
           <NavigationProperty Name="Venta" Relationship="LabSMBJCModel.fk_VentaDetalle_Venta" FromRole="VentaDetalle" ToRole="Venta" />
         </EntityType>
-        <Association Name="FK__Producto__idCate__3D5E1FD2">
+        <Association Name="FK__Producto__idCate__403A8C7D">
           <End Type="LabSMBJCModel.Categoria" Role="Categoria" Multiplicity="1" />
           <End Type="LabSMBJCModel.Producto" Role="Producto" Multiplicity="*" />
           <ReferentialConstraint>
@@ -502,7 +527,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Usuario__idEmple__38996AB5">
+        <Association Name="FK__Usuario__idEmple__398D8EEE">
           <End Type="LabSMBJCModel.Empleado" Role="Empleado" Multiplicity="1" />
           <End Type="LabSMBJCModel.Usuario" Role="Usuario" Multiplicity="*" />
           <ReferentialConstraint>
@@ -550,31 +575,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <ComplexType Name="paProductosListar_Result">
-          <Property Type="Int32" Name="idProducto" Nullable="false" />
-          <Property Type="Int32" Name="idCategoria" Nullable="false" />
-          <Property Type="String" Name="codigo" Nullable="false" MaxLength="20" />
-          <Property Type="String" Name="nombre" Nullable="false" MaxLength="50" />
-          <Property Type="String" Name="descripcion" Nullable="false" MaxLength="500" />
-          <Property Type="Decimal" Name="precio" Nullable="false" Precision="5" Scale="2" />
-          <Property Type="String" Name="usuarioRegistro" Nullable="false" MaxLength="50" />
-          <Property Type="DateTime" Name="fechaRegistro" Nullable="false" Precision="23" />
-          <Property Type="Int16" Name="estado" Nullable="false" />
-          <Property Type="String" Name="categoria" Nullable="false" MaxLength="30" />
-        </ComplexType>
-        <ComplexType Name="paVentaDetalleListar_Result">
-          <Property Type="Int32" Name="id" Nullable="false" />
-          <Property Type="Int32" Name="idVenta" Nullable="false" />
-          <Property Type="Int32" Name="idProducto" Nullable="false" />
-          <Property Type="Int32" Name="cantidad" Nullable="false" />
-          <Property Type="Decimal" Name="precioUnitario" Nullable="false" Precision="18" Scale="0" />
-          <Property Type="Decimal" Name="total" Nullable="false" Precision="18" Scale="0" />
-          <Property Type="String" Name="usuarioRegistro" Nullable="false" MaxLength="50" />
-          <Property Type="DateTime" Name="fechaRegistro" Nullable="false" Precision="23" />
-          <Property Type="Int16" Name="estado" Nullable="false" />
-          <Property Type="String" Name="nombre" Nullable="false" MaxLength="50" />
-          <Property Type="String" Name="razonSocial" Nullable="false" MaxLength="50" />
-        </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -621,6 +621,39 @@
                 <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
                 <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
                 <ScalarProperty Name="estado" ColumnName="estado" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="paProductosListar" FunctionName="LabSMBJCModel.Store.paProductosListar">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="LabSMBJCModel.paProductosListar_Result">
+                <ScalarProperty Name="idProducto" ColumnName="idProducto" />
+                <ScalarProperty Name="idCategoria" ColumnName="idCategoria" />
+                <ScalarProperty Name="codigo" ColumnName="codigo" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+                <ScalarProperty Name="precio" ColumnName="precio" />
+                <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+                <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+                <ScalarProperty Name="estado" ColumnName="estado" />
+                <ScalarProperty Name="categoria" ColumnName="categoria" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="paVentaDetalleListar" FunctionName="LabSMBJCModel.Store.paVentaDetalleListar">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="LabSMBJCModel.paVentaDetalleListar_Result">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="idVenta" ColumnName="idVenta" />
+                <ScalarProperty Name="idProducto" ColumnName="idProducto" />
+                <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+                <ScalarProperty Name="precioUnitario" ColumnName="precioUnitario" />
+                <ScalarProperty Name="total" ColumnName="total" />
+                <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+                <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+                <ScalarProperty Name="estado" ColumnName="estado" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="razonSocial" ColumnName="razonSocial" />
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
@@ -720,39 +753,6 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <FunctionImportMapping FunctionImportName="paProductosListar" FunctionName="LabSMBJCModel.Store.paProductosListar">
-            <ResultMapping>
-              <ComplexTypeMapping TypeName="LabSMBJCModel.paProductosListar_Result">
-                <ScalarProperty Name="idProducto" ColumnName="idProducto" />
-                <ScalarProperty Name="idCategoria" ColumnName="idCategoria" />
-                <ScalarProperty Name="codigo" ColumnName="codigo" />
-                <ScalarProperty Name="nombre" ColumnName="nombre" />
-                <ScalarProperty Name="descripcion" ColumnName="descripcion" />
-                <ScalarProperty Name="precio" ColumnName="precio" />
-                <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
-                <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
-                <ScalarProperty Name="estado" ColumnName="estado" />
-                <ScalarProperty Name="categoria" ColumnName="categoria" />
-              </ComplexTypeMapping>
-            </ResultMapping>
-          </FunctionImportMapping>
-          <FunctionImportMapping FunctionImportName="paVentaDetalleListar" FunctionName="LabSMBJCModel.Store.paVentaDetalleListar">
-            <ResultMapping>
-              <ComplexTypeMapping TypeName="LabSMBJCModel.paVentaDetalleListar_Result">
-                <ScalarProperty Name="id" ColumnName="id" />
-                <ScalarProperty Name="idVenta" ColumnName="idVenta" />
-                <ScalarProperty Name="idProducto" ColumnName="idProducto" />
-                <ScalarProperty Name="cantidad" ColumnName="cantidad" />
-                <ScalarProperty Name="precioUnitario" ColumnName="precioUnitario" />
-                <ScalarProperty Name="total" ColumnName="total" />
-                <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
-                <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
-                <ScalarProperty Name="estado" ColumnName="estado" />
-                <ScalarProperty Name="nombre" ColumnName="nombre" />
-                <ScalarProperty Name="razonSocial" ColumnName="razonSocial" />
-              </ComplexTypeMapping>
-            </ResultMapping>
-          </FunctionImportMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

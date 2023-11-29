@@ -9,57 +9,57 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Web__SMBJC_MVC
 build_property.RootNamespace = Web__SMBJC_MVC
-build_property.ProjectDir = C:\Users\neosj\OneDrive\Escritorio\proyecto de sis457\sis457_SMBJC\Sis_457SMBJC\Web__SMBJC_MVC\
+build_property.ProjectDir = C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\Web__SMBJC_MVC\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\neosj\OneDrive\Escritorio\proyecto de sis457\sis457_SMBJC\Sis_457SMBJC\Web__SMBJC_MVC
+build_property.MSBuildProjectDirectory = C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\Web__SMBJC_MVC
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/neosj/OneDrive/Escritorio/proyecto de sis457/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Home/Index.cshtml]
+[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/neosj/OneDrive/Escritorio/proyecto de sis457/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Home/Privacy.cshtml]
+[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/neosj/OneDrive/Escritorio/proyecto de sis457/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Productoes/Create.cshtml]
+[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Productoes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9lc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/neosj/OneDrive/Escritorio/proyecto de sis457/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Productoes/Delete.cshtml]
+[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Productoes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9lc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/neosj/OneDrive/Escritorio/proyecto de sis457/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Productoes/Details.cshtml]
+[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Productoes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9lc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/neosj/OneDrive/Escritorio/proyecto de sis457/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Productoes/Edit.cshtml]
+[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Productoes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9lc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/neosj/OneDrive/Escritorio/proyecto de sis457/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Productoes/Index.cshtml]
+[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Productoes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9lc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/neosj/OneDrive/Escritorio/proyecto de sis457/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Shared/Error.cshtml]
+[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/neosj/OneDrive/Escritorio/proyecto de sis457/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/neosj/OneDrive/Escritorio/proyecto de sis457/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/_ViewImports.cshtml]
+[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/neosj/OneDrive/Escritorio/proyecto de sis457/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/_ViewStart.cshtml]
+[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/neosj/OneDrive/Escritorio/proyecto de sis457/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Shared/_Layout.cshtml]
+[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-kyuvulc78d

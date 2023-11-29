@@ -5,16 +5,16 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="21f108b9721240d6896acd794e3eaea8" Name="Diagram1" ZoomLevel="85">
-        <EntityTypeShape EntityType="LabSMBJCModel.Categoria" Width="1.5" PointX="13.375" PointY="5" />
-        <EntityTypeShape EntityType="LabSMBJCModel.Cliente" Width="1.5" PointX="15.5" PointY="1.125" />
-        <EntityTypeShape EntityType="LabSMBJCModel.Empleado" Width="1.5" PointX="6.375" PointY="0.625" />
-        <EntityTypeShape EntityType="LabSMBJCModel.Producto" Width="1.5" PointX="10.625" PointY="4.125" />
-        <EntityTypeShape EntityType="LabSMBJCModel.Usuario" Width="1.5" PointX="8.625" PointY="0.625" />
-        <EntityTypeShape EntityType="LabSMBJCModel.Venta" Width="1.5" PointX="10.875" PointY="0.5" />
-        <EntityTypeShape EntityType="LabSMBJCModel.VentaDetalle" Width="1.5" PointX="13.125" PointY="0.5" />
-        <AssociationConnector Association="LabSMBJCModel.FK__Producto__idCate__3D5E1FD2" />
+        <EntityTypeShape EntityType="LabSMBJCModel.Categoria" Width="1.5" PointX="4.625" PointY="8.375" />
+        <EntityTypeShape EntityType="LabSMBJCModel.Cliente" Width="1.5" PointX="3" PointY="5.25" />
+        <EntityTypeShape EntityType="LabSMBJCModel.Empleado" Width="1.5" PointX="0.75" PointY="1.125" />
+        <EntityTypeShape EntityType="LabSMBJCModel.Producto" Width="1.5" PointX="7.375" PointY="7.875" />
+        <EntityTypeShape EntityType="LabSMBJCModel.Usuario" Width="1.5" PointX="3" PointY="1.125" />
+        <EntityTypeShape EntityType="LabSMBJCModel.Venta" Width="1.5" PointX="5.25" PointY="1" />
+        <EntityTypeShape EntityType="LabSMBJCModel.VentaDetalle" Width="1.5" PointX="7.5" PointY="1" />
+        <AssociationConnector Association="LabSMBJCModel.FK__Producto__idCate__403A8C7D" />
         <AssociationConnector Association="LabSMBJCModel.fk_Venta_Cliente" />
-        <AssociationConnector Association="LabSMBJCModel.FK__Usuario__idEmple__38996AB5" />
+        <AssociationConnector Association="LabSMBJCModel.FK__Usuario__idEmple__398D8EEE" />
         <AssociationConnector Association="LabSMBJCModel.fk_VentaDetalle_Producto" />
         <AssociationConnector Association="LabSMBJCModel.fk_Venta_Usuario" />
         <AssociationConnector Association="LabSMBJCModel.fk_VentaDetalle_Venta" />

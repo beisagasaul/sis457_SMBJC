@@ -31,7 +31,7 @@ namespace ClnSis457
                 existente.precioUnitario = ventaDetalle.precioUnitario;
                 existente.total = ventaDetalle.total;
                 existente.usuarioRegistro = ventaDetalle.usuarioRegistro;
-                return context.SaveChanges()
+                return context.SaveChanges();
             }
         }
         //eliminar
