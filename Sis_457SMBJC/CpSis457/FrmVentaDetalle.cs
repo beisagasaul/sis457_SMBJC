@@ -22,7 +22,7 @@ namespace CpSis457
         //crar funcion listar 
         private void listar()
         {
-            var ventadetalle = VentaDetallecl.listarPa(txtBuscar.Text.Trim());
+            var ventadetalle = VentaDetalleCln.listarPa(txtBuscar.Text.Trim());
             dgvLista.DataSource = ventadetalle;
             //Oculta la columna id
             dgvLista.Columns["id"].Visible = false;
@@ -70,7 +70,7 @@ namespace CpSis457
             Size = new Size(1235, 548);
             int index = dgvLista.CurrentCell.RowIndex;
             int id =Convert.ToInt32(dgvLista.Rows[index].Cells["id"].Value);
-            var ventadetalle = VentaDetallecl.get(id);
+            var ventadetalle = VentaDetalleCln.get(id);
             numCantidad.Value = ventadetalle.cantidad;
             numUnitario.Value = ventadetalle.precioUnitario;
             numTotal.Value = ventadetalle.total;
@@ -146,13 +146,13 @@ namespace CpSis457
                 {
                     ventadetalle.fechaRegistro = DateTime.Now;
                     ventadetalle.estado = 1;
-                    VentaDetallecl.insertar(ventadetalle);
+                    VentaDetalleCln.insertar(ventadetalle);
                 }
                 else
                 {
                     int index = dgvLista.CurrentCell.RowIndex;
                     ventadetalle.id = Convert.ToInt32(dgvLista.Rows[index].Cells["id"].Value);
-                    VentaDetallecl.actualizar(ventadetalle);
+                    VentaDetalleCln.actualizar(ventadetalle);
                 }
                 listar();
                 btnCancelar.PerformClick();
@@ -182,7 +182,7 @@ namespace CpSis457
 
             if (dialog == DialogResult.OK)
             {
-                VentaDetallecl.eliminar(id, "sis457");
+                VentaDetalleCln.eliminar(id, "sis457");
                 listar();
                 MessageBox.Show("Venta eliminado correctamente", "sis257",
                       MessageBoxButtons.OK, MessageBoxIcon.Information);

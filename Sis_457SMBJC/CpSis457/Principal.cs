@@ -22,7 +22,7 @@ namespace CpSis457
         //se dirige hacia Productos
         private void rbProducto_Click(object sender, EventArgs e)
         {
-            new FrmProducto().ShowDialog();
+            new FrmVenta().ShowDialog();
 
         }
         //Se drige hacia Venta

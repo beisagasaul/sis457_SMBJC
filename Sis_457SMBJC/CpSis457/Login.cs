@@ -25,7 +25,7 @@ namespace CpSis457
             // new Principal().ShowDialog();
             if (validar())
             {
-                var usuario = Usuariocl.validar(txtUsuario.Text, txtClave.Text);
+                var usuario = UsuarioCln.validar(txtUsuario.Text, txtClave.Text);
                 if (usuario != null)
                 {
                     //Si el usuario es autenticado correctamente

@@ -17,7 +17,7 @@ namespace CpSis457
         public FrmVenta()
         {
             InitializeComponent();
-            dgvLista.DataSource = Ventacl.listarPa("");
+            dgvLista.DataSource = VentaCln.listarPa("");
         }
       
 
