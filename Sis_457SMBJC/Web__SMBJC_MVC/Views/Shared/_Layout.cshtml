@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Minerva</title>
+    <title>@ViewData["Title"] - Licoreria Neos</title>
     
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +36,7 @@
             <div class="d-flex justify-content-between topbar">
                 <div class="top-info">
                     <small class="me-3 text-white-50"><a href="#"><i class="fas fa-map-marker-alt me-2 text-secondary"></i></a>Sucre - Bolivia</small>
-                    <small class="me-3 text-white-50"><a href="#"><i class="fas fa-envelope me-2 text-secondary"></i></a>sis457@minerva.com</small>
+                    <small class="me-3 text-white-50"><a href="#"><i class="fas fa-envelope me-2 text-secondary"></i></a>sis457@Neos.com</small>
                 </div>
                 <div id="note" class="text-secondary d-none d-xl-flex"><small>Note : We help you to Grow your Business</small></div>
                 <div class="top-link">
@@ -54,7 +54,7 @@
         <div class="container">
             <nav class="navbar navbar-dark navbar-expand-lg py-0">
                 <a href="index.html" class="navbar-brand">
-                    <h1 class="text-white fw-bold d-block">Web<span class="text-secondary">Minerva</span> </h1>
+                    <h1 class="text-white fw-bold d-block">Web<span class="text-secondary">Licoreria Neos</span> </h1>
                 </a>
                 <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -63,11 +63,14 @@
                     <div class="navbar-nav ms-auto mx-xl-auto p-0">
                         <a asp-controller="Home" asp-action="Index" class="nav-item nav-link active text-secondary">Inicio</a>
                         @if (User.Identity?.IsAuthenticated == true)
+
                         {
+                            <a asp-controller="Categorias" asp-action="Index" class="nav-item nav-link">Categorias</a>
                             <a asp-controller="Productos" asp-action="Index" class="nav-item nav-link">Productos</a>
-                            <a asp-controller="Proveedores" asp-action="Index" class="nav-item nav-link">Proveedores</a>
+                            <a asp-controller="Ventas" asp-action="Index" class="nav-item nav-link">Ventas</a>
+                            <a asp-controller="VentaDetalles" asp-action="Index" class="nav-item nav-link">Detalle de ventas</a>
                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Admin</a>
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Administradores</a>
                                 <div class="dropdown-menu rounded">
                                     <a asp-controller="Empleados" asp-action="Index" class="dropdown-item">Empleados</a>
                                     <a asp-controller="Usuarios" asp-action="Index" class="dropdown-item">Usuarios</a>
