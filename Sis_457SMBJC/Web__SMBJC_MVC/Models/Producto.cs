@@ -5,17 +5,17 @@ namespace Web__SMBJC_MVC.Models;
 
 public partial class Producto
 {
-    public int Id { get; set; }
+    public int IdProducto { get; set; }
+
+    public int IdCategoria { get; set; }
 
     public string Codigo { get; set; } = null!;
 
+    public string Nombre { get; set; } = null!;
+
     public string Descripcion { get; set; } = null!;
 
-    public string UnidadMedida { get; set; } = null!;
-
-    public decimal Saldo { get; set; }
-
-    public decimal PrecioVenta { get; set; }
+    public decimal Precio { get; set; }
 
     public string UsuarioRegistro { get; set; } = null!;
 
@@ -23,7 +23,7 @@ public partial class Producto
 
     public short Estado { get; set; }
 
-    public virtual ICollection<CompraDetalle> CompraDetalles { get; set; } = new List<CompraDetalle>();
+    public virtual Categorium IdCategoriaNavigation { get; set; } = null!;
 
-    public virtual ICollection<Ventum> Venta { get; set; } = new List<Ventum>();
+    public virtual ICollection<VentaDetalle> VentaDetalles { get; set; } = new List<VentaDetalle>();
 }

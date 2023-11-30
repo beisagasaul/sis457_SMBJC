@@ -5,21 +5,17 @@ namespace Web__SMBJC_MVC.Models;
 
 public partial class Empleado
 {
-    public int Id { get; set; }
+    public int IdEmpleado { get; set; }
 
-    public string CedulaIdentidad { get; set; } = null!;
+    public string Nombre { get; set; } = null!;
 
-    public string Nombres { get; set; } = null!;
+    public string Apellidos { get; set; } = null!;
 
-    public string? PrimerApellido { get; set; }
-
-    public string? SegudoApellido { get; set; }
-
-    public string Direccion { get; set; } = null!;
-
-    public long Celular { get; set; }
+    public string Telefono { get; set; } = null!;
 
     public string Cargo { get; set; } = null!;
+
+    public double Salario { get; set; }
 
     public string UsuarioRegistro { get; set; } = null!;
 

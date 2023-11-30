@@ -1,5 +1,4 @@
 C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\obj\Release\CpSis457.csproj.AssemblyReference.cache
-C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\obj\Release\CpSis457.FrmProducto.resources
 C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\obj\Release\CpSis457.FrmVenta.resources
 C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\obj\Release\CpSis457.FrmVentaDetalle.resources
 C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\CpSis457\obj\Release\CpSis457.Login.resources

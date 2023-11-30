@@ -7,13 +7,13 @@ public partial class Ventum
 {
     public int Id { get; set; }
 
-    public string Transccion { get; set; } = null!;
-
-    public DateTime Fecha { get; set; }
-
     public int IdUsuario { get; set; }
 
     public int IdCliente { get; set; }
+
+    public decimal TotalVenta { get; set; }
+
+    public DateTime FechaVenta { get; set; }
 
     public string UsuarioRegistro { get; set; } = null!;
 
@@ -21,11 +21,7 @@ public partial class Ventum
 
     public short Estado { get; set; }
 
-    public int? IdProducto { get; set; }
-
     public virtual Cliente IdClienteNavigation { get; set; } = null!;
-
-    public virtual Producto? IdProductoNavigation { get; set; }
 
     public virtual Usuario IdUsuarioNavigation { get; set; } = null!;
 

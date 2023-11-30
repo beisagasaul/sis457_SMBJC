@@ -5,7 +5,7 @@ namespace Web__SMBJC_MVC.Models;
 
 public partial class Usuario
 {
-    public int Id { get; set; }
+    public int IdUsuario { get; set; }
 
     public int IdEmpleado { get; set; }
 
@@ -18,8 +18,6 @@ public partial class Usuario
     public DateTime FechaRegistro { get; set; }
 
     public short Estado { get; set; }
-
-    public string? Cargo { get; set; }
 
     public virtual Empleado IdEmpleadoNavigation { get; set; } = null!;
 

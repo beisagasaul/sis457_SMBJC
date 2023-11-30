@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\neosj\\OneDrive\\Escritorio\\web\\sis457_SMBJC\\Sis_457SMBJC\\Web__SMBJC_MVC\\Web__SMBJC_MVC.csproj": {}
+    "C:\\Users\\hola\\Desktop\\sis457_SMBJC\\Sis_457SMBJC\\Web__SMBJC_MVC\\Web__SMBJC_MVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\neosj\\OneDrive\\Escritorio\\web\\sis457_SMBJC\\Sis_457SMBJC\\Web__SMBJC_MVC\\Web__SMBJC_MVC.csproj": {
+    "C:\\Users\\hola\\Desktop\\sis457_SMBJC\\Sis_457SMBJC\\Web__SMBJC_MVC\\Web__SMBJC_MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\neosj\\OneDrive\\Escritorio\\web\\sis457_SMBJC\\Sis_457SMBJC\\Web__SMBJC_MVC\\Web__SMBJC_MVC.csproj",
+        "projectUniqueName": "C:\\Users\\hola\\Desktop\\sis457_SMBJC\\Sis_457SMBJC\\Web__SMBJC_MVC\\Web__SMBJC_MVC.csproj",
         "projectName": "Web__SMBJC_MVC",
-        "projectPath": "C:\\Users\\neosj\\OneDrive\\Escritorio\\web\\sis457_SMBJC\\Sis_457SMBJC\\Web__SMBJC_MVC\\Web__SMBJC_MVC.csproj",
-        "packagesPath": "C:\\Users\\neosj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\neosj\\OneDrive\\Escritorio\\web\\sis457_SMBJC\\Sis_457SMBJC\\Web__SMBJC_MVC\\obj\\",
+        "projectPath": "C:\\Users\\hola\\Desktop\\sis457_SMBJC\\Sis_457SMBJC\\Web__SMBJC_MVC\\Web__SMBJC_MVC.csproj",
+        "packagesPath": "C:\\Users\\hola\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hola\\Desktop\\sis457_SMBJC\\Sis_457SMBJC\\Web__SMBJC_MVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\neosj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hola\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -42,27 +42,23 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.14, )"
+              "version": "[7.0.12, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.14, )"
+              "version": "[7.0.12, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.14, )"
+              "version": "[7.0.12, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.14, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[7.0.11, )"
+              "version": "[7.0.12, )"
             }
           },
           "imports": [
@@ -84,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

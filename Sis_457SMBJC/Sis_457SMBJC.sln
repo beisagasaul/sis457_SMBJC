@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadSis457", "CadSis457\CadS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClnSis457", "ClnSis457\ClnSis457.csproj", "{F98E9034-BA55-46ED-A939-5225712D5655}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web__SMBJC_MVC", "Web__SMBJC_MVC\Web__SMBJC_MVC.csproj", "{C1D75EB5-C7DD-43B4-A654-EAD3F9B148C5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web__SMBJC_MVC", "Web__SMBJC_MVC\Web__SMBJC_MVC.csproj", "{E1177574-DD27-4655-A9F2-FB5F115538A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{F98E9034-BA55-46ED-A939-5225712D5655}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F98E9034-BA55-46ED-A939-5225712D5655}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F98E9034-BA55-46ED-A939-5225712D5655}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C1D75EB5-C7DD-43B4-A654-EAD3F9B148C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C1D75EB5-C7DD-43B4-A654-EAD3F9B148C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C1D75EB5-C7DD-43B4-A654-EAD3F9B148C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C1D75EB5-C7DD-43B4-A654-EAD3F9B148C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1177574-DD27-4655-A9F2-FB5F115538A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1177574-DD27-4655-A9F2-FB5F115538A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1177574-DD27-4655-A9F2-FB5F115538A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1177574-DD27-4655-A9F2-FB5F115538A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
