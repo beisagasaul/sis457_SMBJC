@@ -5,33 +5,38 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Create</h1>
+<h1>Crear Clientes</h1>
 
-<h4>Cliente</h4>
+
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="RazonSocial" class="control-label"></label>
+                <label class="control-label">Razon Social</label>
                 <input asp-for="RazonSocial" class="form-control" />
                 <span asp-validation-for="RazonSocial" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="CedulaIdentidad" class="control-label"></label>
+                <label  class="control-label">Cedula de Identidad</label>
                 <input asp-for="CedulaIdentidad" class="form-control" />
                 <span asp-validation-for="CedulaIdentidad" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <label class="control-label">Celular</label>
+                <input asp-for="Celular" class="form-control" />
+                <span asp-validation-for="Celular" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Crear" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Volver a la Lista</a>
 </div>
 
 @section Scripts {
