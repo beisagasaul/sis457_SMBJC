@@ -14,11 +14,9 @@
     <thead>
         <tr>
             <th>Usuario </th>
-            <th>Contraseña  </th>
             <th>Usuario de Registro </th>
             <th>Fecha de Registro </th>
-            <th>Estado</th>
-            <th>Id de Empleado </th>
+             <th>Id de Empleado </th>
             <th></th>
         </tr>
     </thead>
@@ -36,9 +34,6 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.FechaRegistro)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Estado)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.IdEmpleadoNavigation.IdEmpleado)

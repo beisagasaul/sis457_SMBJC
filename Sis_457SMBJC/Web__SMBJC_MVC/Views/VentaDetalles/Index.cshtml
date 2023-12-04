@@ -18,9 +18,7 @@
             <th>Total Bs.</th>
             <th>Usuario de Registro</th>
             <th>Fecha de Registro</th>
-            <th>Estado</th>
-            <th>Id  de Producto</th>
-            <th>Id de Venta</th>
+            
             <th></th>
         </tr>
     </thead>
@@ -42,15 +40,7 @@
             <td>
                 @Html.DisplayFor(modelItem => item.FechaRegistro)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Estado)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdProductoNavigation.IdProducto)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdVentaNavigation.Id)
-            </td>
+            
             <td>
                     <a asp-action="Details" asp-route-id="@item.Id" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ver"><i class="fas fa-eye me-2"></i></a>
                     <a asp-action="Edit" asp-route-id="@item.Id" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Editar"><i class="fas fa-edit me-2"></i></a>

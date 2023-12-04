@@ -29,7 +29,7 @@ public partial class Cliente
 
     public int id { get; set; }
 
-    public string razonSocial { get; set; }
+    public string nombre { get; set; }
 
     public string cedulaIdentidad { get; set; }
 

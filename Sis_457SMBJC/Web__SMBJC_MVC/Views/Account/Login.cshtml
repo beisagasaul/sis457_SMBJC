@@ -4,34 +4,34 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="container-fluid my-3">
+<div class="container-fluid my-3" style="background-color: #f2e6ff; padding: 20px;">
     <div class="container">
         <div class="row">
-            <h1>Iniciar Sesión</h1>
+            <h1 style="color: #6a0dad;">Iniciar Sesión</h1>
 
             <form asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" role="form">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="form-group">
-                    <label asp-for="usuario" class="control-label"></label>
-                    <input asp-for="usuario" class="form-control" placeholder="Usuario" required />
-                    <span asp-validation-for="usuario" class="text-danger"></span>
+                    <label asp-for="usuario" class="control-label" style="color: #6a0dad;"></label>
+                    <input asp-for="usuario" class="form-control" placeholder="Usuario" required style="border-color: #6a0dad; width: 200px;" />
+                    <span asp-validation-for="usuario" class="text-danger" style="font-size: 12px;"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="clave" class="control-label"></label>
-                    <input asp-for="clave" type="password" class="form-control" placeholder="Contraseña" required />
+                    <label asp-for="clave" class="control-label" style="color: #6a0dad;"></label>
+                    <input asp-for="clave" type="password" class="form-control" placeholder="Contraseña" required style="border-color: #6a0dad; width: 200px;" />
                     <span asp-validation-for="clave" class="text-danger"></span>
                 </div>
                 <div class="row" style="margin-top:50px;">
                     <div class="col-xs-7">
                         <input type="checkbox" name="recordarme" id="recordarme" />
-                        <label for="recordarme">Recordarme</label>
+                        <label for="recordarme" style="color: #6a0dad;">Recordarme</label>
                     </div>
                     <div class="col-xs-5">
-                        <input type="submit" value="Iniciar Sesión" class="btn btn-primary" />
+                        <input type="submit" value="Iniciar Sesión" class="btn btn-primary" style="background-color: #6a0dad; border-color: #6a0dad;" />
                     </div>
                 </div>
-                <div class="col-xs-12 text-center">
-                    <a asp-controller="Account" asp-action="ResetPassword">¿Se te olvidó la contraseña?</a>
+                <div class="col-xs-12 text-center" style="margin-top: 10px;">
+                    <a asp-controller="Account" asp-action="ResetPassword" style="color: #6a0dad;">¿Se te olvidó la contraseña?</a>
                 </div>
             </form>
         </div>

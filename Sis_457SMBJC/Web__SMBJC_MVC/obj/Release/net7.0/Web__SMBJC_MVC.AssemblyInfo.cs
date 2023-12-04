@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Web__SMBJC_MVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f34aa7b10e0efb20fbaa35dbaebd460f9319eb52")]
 [assembly: System.Reflection.AssemblyProductAttribute("Web__SMBJC_MVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Web__SMBJC_MVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
