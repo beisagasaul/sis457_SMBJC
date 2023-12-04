@@ -13,9 +13,11 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label  class="control-label">Nombre</label>
+                <label asp-for="Nombre" class="control-label"></label>
                 <input asp-for="Nombre" class="form-control" />
-                <span asp-validation-for="Nombre" class="text-danger">El campo Nombre es obligatorio.</span>
+                <span asp-validation-for="Nombre" class="text-danger"></span>
+                
+                
             </div>
             <div class="form-group">
                 <input type="submit" value="Crear" class="btn btn-primary" />

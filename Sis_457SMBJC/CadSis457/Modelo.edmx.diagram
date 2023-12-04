@@ -6,11 +6,11 @@
     <edmx:Diagrams>
       <Diagram DiagramId="21f108b9721240d6896acd794e3eaea8" Name="Diagram1" ZoomLevel="85">
         <EntityTypeShape EntityType="LabSMBJCModel.Categoria" Width="1.5" PointX="6.125" PointY="5.25" />
-        <EntityTypeShape EntityType="LabSMBJCModel.Cliente" Width="1.5" PointX="3.125" PointY="4.875" />
+        <EntityTypeShape EntityType="LabSMBJCModel.Cliente" Width="1.5" PointX="0.875" PointY="5.25" />
         <EntityTypeShape EntityType="LabSMBJCModel.Empleado" Width="1.5" PointX="0.75" PointY="1.125" />
         <EntityTypeShape EntityType="LabSMBJCModel.Producto" Width="1.5" PointX="9.375" PointY="4.375" />
         <EntityTypeShape EntityType="LabSMBJCModel.Usuario" Width="1.5" PointX="3" PointY="1.125" />
-        <EntityTypeShape EntityType="LabSMBJCModel.Venta" Width="1.5" PointX="5.25" PointY="1" />
+        <EntityTypeShape EntityType="LabSMBJCModel.Venta" Width="1.5" PointX="5.375" PointY="0.5" />
         <EntityTypeShape EntityType="LabSMBJCModel.VentaDetalle" Width="1.5" PointX="7.5" PointY="1" />
         <AssociationConnector Association="LabSMBJCModel.FK__Producto__idCate__403A8C7D" />
         <AssociationConnector Association="LabSMBJCModel.fk_Venta_Cliente" />

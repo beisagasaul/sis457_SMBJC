@@ -48,8 +48,9 @@ namespace Web__SMBJC_MVC.Controllers
         // GET: VentaDetalles/Create
         public IActionResult Create()
         {
-            ViewData["IdProducto"] = new SelectList(_context.Productos, "IdProducto", "IdProducto");
-            ViewData["IdVenta"] = new SelectList(_context.Venta, "Id", "Id");
+            ViewData["IdProducto"] = new SelectList(_context.Productos, "IdProducto", "Nombre");
+            ViewData["IdVenta"] = new SelectList(_context.Clientes, "Id", "RazonSocial");
+            
             return View();
         }
 
@@ -60,8 +61,8 @@ namespace Web__SMBJC_MVC.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,IdVenta,IdProducto,Cantidad,PrecioUnitario,Total")] VentaDetalle ventaDetalle)
         {
-            if (ModelState.IsValid) if (!int.IsEvenInteger(ventaDetalle.Id) || !int.IsEvenInteger(ventaDetalle.IdVenta))
-                {
+            if (ventaDetalle.Cantidad > 0 && ventaDetalle.PrecioUnitario > 0  && ventaDetalle.Total > 0)
+            {
                 ventaDetalle.UsuarioRegistro = User.Identity?.Name;
                 ventaDetalle.FechaRegistro = DateTime.Now;
                 ventaDetalle.Estado = 1;
@@ -71,6 +72,7 @@ namespace Web__SMBJC_MVC.Controllers
             }
             ViewData["IdProducto"] = new SelectList(_context.Productos, "IdProducto", "IdProducto", ventaDetalle.IdProducto);
             ViewData["IdVenta"] = new SelectList(_context.Venta, "Id", "Id", ventaDetalle.IdVenta);
+            
             return View(ventaDetalle);
         }
 

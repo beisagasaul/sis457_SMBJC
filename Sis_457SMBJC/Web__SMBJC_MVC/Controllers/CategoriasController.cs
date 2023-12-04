@@ -59,8 +59,20 @@ namespace Web__SMBJC_MVC.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("IdCategoria,Nombre")] Categorium categorium)
         {
-            if (!string.IsNullOrEmpty(categorium.Nombre) )
+            if (ModelState.IsValid)
             {
+                if (string.IsNullOrEmpty(categorium.Nombre))
+                {
+                    ModelState.AddModelError("categorium.Nombre", "El nombre de la categoría es requerido");
+                    return View(categorium);
+                }
+
+                if (_context.Categoria.Any(c => c.Nombre == categorium.Nombre))
+                {
+                    ModelState.AddModelError("categorium.Nombre", "Ya existe una categoría con este nombre");
+                    return View(categorium);
+                }
+
                 categorium.UsuarioRegistro = User.Identity?.Name;
                 categorium.FechaRegistro = DateTime.Now;
                 categorium.Estado = 1;

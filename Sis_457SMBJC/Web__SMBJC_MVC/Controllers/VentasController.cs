@@ -50,8 +50,8 @@ namespace Web__SMBJC_MVC.Controllers
         // GET: Ventas/Create
         public IActionResult Create()
         {
-            ViewData["IdCliente"] = new SelectList(_context.Clientes, "Id", "Id");
-            ViewData["IdUsuario"] = new SelectList(_context.Usuarios, "IdUsuario", "IdUsuario");
+            ViewData["IdCliente"] = new SelectList(_context.Clientes, "Id", "RazonSocial");
+            ViewData["IdUsuario"] = new SelectList(_context.Usuarios, "IdUsuario", "Usuario1");
             return View();
         }
 
@@ -73,8 +73,8 @@ namespace Web__SMBJC_MVC.Controllers
 
            
             }
-            ViewData["IdCliente"] = new SelectList(_context.Clientes, "Id", "Id", ventum.IdCliente);
-            ViewData["IdUsuario"] = new SelectList(_context.Usuarios, "IdUsuario", "IdUsuario", ventum.IdUsuario);
+            ViewData["IdCliente"] = new SelectList(_context.Clientes, "Id", "RazonSocial", ventum.IdCliente);
+            ViewData["IdUsuario"] = new SelectList(_context.Usuarios, "IdUsuario", "Usuario1", ventum.IdUsuario);
             return View(ventum);
         }
 
