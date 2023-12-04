@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -9,6 +10,7 @@ using Web__SMBJC_MVC.Models;
 
 namespace Web__SMBJC_MVC.Controllers
 {
+    [Authorize]
     public class CategoriasController : Controller
     {
         private readonly LabSmbjcContext _context;
@@ -59,7 +61,7 @@ namespace Web__SMBJC_MVC.Controllers
         {
             if (!string.IsNullOrEmpty(categorium.Nombre) )
             {
-                categorium.UsuarioRegistro = "sis257";
+                categorium.UsuarioRegistro = User.Identity?.Name;
                 categorium.FechaRegistro = DateTime.Now;
                 categorium.Estado = 1;
                 _context.Add(categorium);

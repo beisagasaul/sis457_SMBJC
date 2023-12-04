@@ -10,7 +10,7 @@ using Web__SMBJC_MVC.Models;
 
 namespace Web__SMBJC_MVC.Controllers
 {
-    
+    [Authorize]
     public class UsuariosController : Controller
     {
         private readonly LabSmbjcContext _context;

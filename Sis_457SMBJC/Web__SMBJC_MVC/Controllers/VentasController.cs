@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -9,6 +10,7 @@ using Web__SMBJC_MVC.Models;
 
 namespace Web__SMBJC_MVC.Controllers
 {
+    [Authorize]
     public class VentasController : Controller
     {
         private readonly LabSmbjcContext _context;
@@ -58,18 +60,27 @@ namespace Web__SMBJC_MVC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,IdUsuario,IdCliente,TotalVenta,FechaVenta,UsuarioRegistro,FechaRegistro,Estado")] Ventum ventum)
+        public async Task<IActionResult> Create([Bind("Id,IdUsuario,IdCliente,TotalVenta,FechaVenta")] Ventum ventum)
         {
-            if (ModelState.IsValid)
+            if (!int.IsEvenInteger(ventum.IdCliente) || !int.IsEvenInteger(ventum.IdUsuario))
             {
+                ventum.UsuarioRegistro = User.Identity?.Name;
+                ventum.FechaRegistro = DateTime.Now;
+                ventum.Estado = 1;
                 _context.Add(ventum);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
+
+           
             }
             ViewData["IdCliente"] = new SelectList(_context.Clientes, "Id", "Id", ventum.IdCliente);
             ViewData["IdUsuario"] = new SelectList(_context.Usuarios, "IdUsuario", "IdUsuario", ventum.IdUsuario);
             return View(ventum);
         }
+
+
+      
+        
 
         // GET: Ventas/Edit/5
         public async Task<IActionResult> Edit(int? id)

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -9,6 +10,7 @@ using Web__SMBJC_MVC.Models;
 
 namespace Web__SMBJC_MVC.Controllers
 {
+    [Authorize]
     public class ProductosController : Controller
     {
         private readonly LabSmbjcContext _context;
@@ -56,10 +58,13 @@ namespace Web__SMBJC_MVC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdProducto,IdCategoria,Codigo,Nombre,Descripcion,Precio,UsuarioRegistro,FechaRegistro,Estado")] Producto producto)
+        public async Task<IActionResult> Create([Bind("IdProducto,IdCategoria,Codigo,Nombre,Descripcion,Precio")] Producto producto)
         {
-            if (ModelState.IsValid)
+            if (!string.IsNullOrEmpty(producto.Nombre) && producto.Precio > 0 && !string.IsNullOrEmpty(producto.Codigo) && !string.IsNullOrEmpty(producto.Descripcion))
             {
+                producto.UsuarioRegistro = User.Identity?.Name;
+                producto.FechaRegistro = DateTime.Now;
+                producto.Estado = 1;
                 _context.Add(producto);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));

@@ -58,10 +58,13 @@ namespace Web__SMBJC_MVC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,IdVenta,IdProducto,Cantidad,PrecioUnitario,Total,UsuarioRegistro,FechaRegistro,Estado")] VentaDetalle ventaDetalle)
+        public async Task<IActionResult> Create([Bind("Id,IdVenta,IdProducto,Cantidad,PrecioUnitario,Total")] VentaDetalle ventaDetalle)
         {
-            if (ModelState.IsValid)
-            {
+            if (ModelState.IsValid) if (!int.IsEvenInteger(ventaDetalle.Id) || !int.IsEvenInteger(ventaDetalle.IdVenta))
+                {
+                ventaDetalle.UsuarioRegistro = User.Identity?.Name;
+                ventaDetalle.FechaRegistro = DateTime.Now;
+                ventaDetalle.Estado = 1;
                 _context.Add(ventaDetalle);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));

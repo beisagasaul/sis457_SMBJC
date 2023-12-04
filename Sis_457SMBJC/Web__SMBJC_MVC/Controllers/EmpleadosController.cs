@@ -61,7 +61,7 @@ namespace Web__SMBJC_MVC.Controllers
         {
             if (!string.IsNullOrEmpty(empleado.Nombre))
             {
-                empleado.UsuarioRegistro = "sis457";
+                empleado.UsuarioRegistro = User.Identity?.Name;
                 empleado.FechaRegistro = DateTime.Now;
                 empleado.Estado = 1;
                 _context.Add(empleado);
