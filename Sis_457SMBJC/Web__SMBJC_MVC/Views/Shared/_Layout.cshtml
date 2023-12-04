@@ -80,8 +80,15 @@
                                     <a asp-controller="Usuarios" asp-action="Index" class="dropdown-item">Usuarios</a>
                                 </div>
                             </div>
+                            <a asp-controller="Clientes" asp-action="Index" class="nav-item nav-link">Clientes</a>
                         }
-                        <a asp-controller="Home" asp-action="Privacy" class="nav-item nav-link">Privacidad</a>
+
+                        else
+                        {
+                            <a asp-controller="Home" asp-action="Privacy" class="nav-item nav-link">Privacidad</a>
+                        }
+
+                        
                     </div>
                 </div>
                 <div class="d-none d-xl-flex flex-shirink-0">

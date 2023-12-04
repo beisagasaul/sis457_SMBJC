@@ -9,185 +9,187 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Web__SMBJC_MVC
 build_property.RootNamespace = Web__SMBJC_MVC
-build_property.ProjectDir = C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\Web__SMBJC_MVC\
+build_property.ProjectDir = C:\Users\neosj\OneDrive\Escritorio\wb licoreria\sis457_SMBJC\Sis_457SMBJC\Web__SMBJC_MVC\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\hola\Desktop\sis457_SMBJC\Sis_457SMBJC\Web__SMBJC_MVC
+build_property.MSBuildProjectDirectory = C:\Users\neosj\OneDrive\Escritorio\wb licoreria\sis457_SMBJC\Sis_457SMBJC\Web__SMBJC_MVC
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Account/Login.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Categorias/Create.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Categorias/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Categorias/Delete.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Categorias/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Categorias/Details.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Categorias/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Categorias/Edit.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Categorias/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Categorias/Index.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Categorias/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Clientes/Create.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Clientes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Clientes/Delete.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Clientes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Clientes/Details.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Clientes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Clientes/Edit.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Clientes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Clientes/Index.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Clientes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Empleados/Create.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Empleados/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Empleados/Delete.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Empleados/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Empleados/Details.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Empleados/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Empleados/Edit.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Empleados/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Empleados/Index.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Empleados/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Home/Index.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Home/Privacy.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Productos/Create.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Productos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Productos/Delete.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Productos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Productos/Details.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Productos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Productos/Edit.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Productos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Productos/Index.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Productos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Shared/Error.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Shared/_LogoutPartial.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Shared/_LogoutPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dvdXRQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Usuarios/Create.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Usuarios/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Usuarios/Delete.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Usuarios/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Usuarios/Details.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Usuarios/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Usuarios/Edit.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Usuarios/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Usuarios/Index.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Usuarios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/VentaDetalles/Create.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/VentaDetalles/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFEZXRhbGxlc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/VentaDetalles/Delete.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/VentaDetalles/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFEZXRhbGxlc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/VentaDetalles/Details.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/VentaDetalles/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFEZXRhbGxlc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/VentaDetalles/Edit.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/VentaDetalles/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFEZXRhbGxlc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/VentaDetalles/Index.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/VentaDetalles/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFEZXRhbGxlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Ventas/Create.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Ventas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Ventas/Delete.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Ventas/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Ventas/Details.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Ventas/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Ventas/Edit.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Ventas/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Ventas/Index.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Ventas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/_ViewImports.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/_ViewStart.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hola/Desktop/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Shared/_Layout.cshtml]
+[C:/Users/neosj/OneDrive/Escritorio/wb licoreria/sis457_SMBJC/Sis_457SMBJC/Web__SMBJC_MVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-kyuvulc78d
